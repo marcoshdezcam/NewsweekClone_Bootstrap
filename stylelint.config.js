@@ -2,6 +2,7 @@
 
 module.exports = {
   extends: "stylelint-config-recommended",
+  ignoreFiles: ["css/*.css"],
   rules: {
     "at-rule-empty-line-before": [
       "always",
