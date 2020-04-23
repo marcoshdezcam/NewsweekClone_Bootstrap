@@ -1,7 +1,16 @@
-// VARIABLE OVERRIDES
-$theme-colors: (
-  "primary": #f72210,
-);
+// IMPORTS
+@import "../scss/variables.scss";
+@import "../scss/mixins.scss";
 
-// BOOTSTRAP SASS IMPORTS
+// CUSTOM STYLE
+nav {
+  #newsweek_Logo {
+    width: 150px;
+  }
+
+  .btn {
+    width: 126px;
+  }
+}
+// BOOTSTRAP SASS IMPORT
 @import "../node_modules/bootstrap/scss/bootstrap";

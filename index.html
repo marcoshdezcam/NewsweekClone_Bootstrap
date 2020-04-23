@@ -9,66 +9,75 @@
     <meta name="description" content="" />
     <meta name="author" content="Marcos Hernández Campos" />
 
-    <link rel="stylesheet" href="/css/custom.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
   </head>
 
   <body>
     <div class="container-xl px-0">
       <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Newsweek</a>
+        <a class="navbar-brand" href="#">
+          <img
+            src="./img/Newsweek_Logo.png"
+            id="newsweek_Logo"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
+
+        <button type="button" class="btn btn-primary">
+          Sign in
+        </button>
+        <button type="button" class="btn btn-secondary">
+          Subscribe
+        </button>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler navbar-toggler-icon"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="categoriesMenu">
-          <ul class="navbar-nav ml-auto">
+          data-target="#collapsibleCategoriesMenu"
+        ></button>
+
+        <div class="collapse navbar-collapse" id="collapsibleCategoriesMenu">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              Search
+              <a class="nav-link" href="#">U.S.</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">U.S.</a>
+              <a class="nav-link" href="#">World</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">World</a>
+              <a class="nav-link" href="#">Business</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Business</a>
+              <a class="nav-link" href="#">Tech & Science</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Tech & Science</a>
+              <a class="nav-link" href="#">Culture</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Culture</a>
+              <a class="nav-link" href="#">Newsgeek</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Newsgeek</a>
+              <a class="nav-link" href="#">Sports</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Sports</a>
+              <a class="nav-link" href="#">Health</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Health</a>
+              <a class="nav-link" href="#">The Debate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">The Debate</a>
+              <a class="nav-link" href="#">Vantage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Vantage</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Wheather</a>
+              <a class="nav-link" href="#">Wheather</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="./js/jquery.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
