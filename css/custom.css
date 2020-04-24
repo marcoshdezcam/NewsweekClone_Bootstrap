@@ -1,8 +1,11 @@
+body {
+  background-color: #f4f5f6; }
+
 nav #newsweek_Logo {
   width: 150px; }
 
 nav .btn {
-  width: 126px; }
+  width: 80px; }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)

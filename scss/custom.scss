@@ -3,13 +3,18 @@
 @import "../scss/mixins.scss";
 
 // CUSTOM STYLE
+
+body {
+  background-color: #f4f5f6;
+}
+
 nav {
   #newsweek_Logo {
     width: 150px;
   }
 
   .btn {
-    width: 126px;
+    width: 80px;
   }
 }
 // BOOTSTRAP SASS IMPORT
