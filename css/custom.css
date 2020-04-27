@@ -7,6 +7,37 @@ nav #newsweek_Logo {
 nav .btn {
   width: 80px; }
 
+#opinion #opinion-cards {
+  height: 90%; }
+  #opinion #opinion-cards .opinion-card {
+    height: 25%; }
+    #opinion #opinion-cards .opinion-card img {
+      width: 20%; }
+    #opinion #opinion-cards .opinion-card .opinion-info {
+      width: 80%; }
+
+#the-debate .debate-container {
+  height: 90%; }
+  #the-debate .debate-container #vs-icon {
+    width: 100%;
+    height: 10%; }
+  #the-debate .debate-container article {
+    height: 45%; }
+    #the-debate .debate-container article .debate-vs {
+      width: 100%;
+      height: 50%; }
+      #the-debate .debate-container article .debate-vs .debate-vs-img {
+        width: 25%; }
+      #the-debate .debate-container article .debate-vs .debate-info {
+        width: 75%; }
+    #the-debate .debate-container article .debate-author {
+      width: 100%;
+      height: 50%; }
+      #the-debate .debate-container article .debate-author .author-name {
+        width: 90%; }
+      #the-debate .debate-container article .debate-author .debate-author-img {
+        width: 10%; }
+
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
