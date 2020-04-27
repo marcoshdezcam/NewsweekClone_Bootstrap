@@ -16,6 +16,12 @@ nav .btn {
     #opinion #opinion-cards .opinion-card .opinion-info {
       width: 80%; }
 
+#more-stories .more-story .more-story-image {
+  width: 25%; }
+
+#more-stories .more-story .more-story-content {
+  width: 75%; }
+
 #the-debate .debate-container {
   height: 90%; }
   #the-debate .debate-container #vs-icon {
@@ -37,6 +43,12 @@ nav .btn {
         width: 90%; }
       #the-debate .debate-container article .debate-author .debate-author-img {
         width: 10%; }
+
+#latest-news .latest-news-img {
+  width: 25%; }
+
+#latest-news h4 {
+  width: 75%; }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)

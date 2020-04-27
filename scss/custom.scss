@@ -36,6 +36,18 @@ nav {
   }
 }
 
+#more-stories {
+  .more-story {
+    .more-story-image {
+      width: 25%;
+    }
+
+    .more-story-content {
+      width: 75%;
+    }
+  }
+}
+
 #the-debate {
   .debate-container {
     height: 90%;
@@ -76,5 +88,16 @@ nav {
     }
   }
 }
+
+#latest-news {
+  .latest-news-img {
+    width: 25%;
+  }
+
+  h4 {
+    width: 75%;
+  }
+}
+
 // BOOTSTRAP SASS IMPORT
 @import "../node_modules/bootstrap/scss/bootstrap";
