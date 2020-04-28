@@ -14,23 +14,28 @@
 
   <body>
     <nav
-      class="navbar sticky-top navbar-expand-lg justify-content-lg-between navbar-dark bg-primary"
+      class="navbar sticky-top navbar-expand-lg navbar-dark p-0 bg-primary d-lg-flex flex-lg-wrap justify-content-lg-between align-items-lg-end"
     >
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand order-lg-2" href="#">
         <img src="./img/Newsweek_Logo.png" id="newsweek_Logo" class="" alt="" />
       </a>
-      <div class="">
+      <div class="flex-md-grow-1 flex-lg-grow-0 order-lg-1">
         <div class="d-none d-md-block d-lg-block d-xl-block" id="location">
-          <i class="fas fa-cloud-sun"></i>
-          Puebla City, MX >
+          18°Puebla City, MX >
         </div>
-        <div class="d-none d-lg-block d-xl-block" id="date">DATE</div>
+        <div class="d-none d-lg-block d-xl-block" id="date">
+          Mon, Apr 27, 2020
+        </div>
       </div>
-      <div class="">
-        <button type="button" class="btn btn-primary">
+      <div class="order-lg-3 m-lg-3">
+        <button type="button" class="btn btn-primary py-lg-2" id="top-sign-in">
           Sign in
         </button>
-        <button type="button" class="btn btn-secondary">
+        <button
+          type="button"
+          class="btn btn-secondary py-lg-2"
+          id="top-subscribe"
+        >
           Subscribe
         </button>
         <button
@@ -40,8 +45,11 @@
           data-target="#collapsibleCategoriesMenu"
         ></button>
       </div>
-      <div class="collapse navbar-collapse" id="collapsibleCategoriesMenu">
-        <ul class="navbar-nav">
+      <div
+        class="order-lg-4 collapse navbar-collapse"
+        id="collapsibleCategoriesMenu"
+      >
+        <ul class="navbar-nav" id="category-links">
           <li class="nav-item">
             <a class="nav-link" href="#">U.S.</a>
           </li>
@@ -75,17 +83,23 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Wheather</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Search</a>
+          </li>
+          <li class="nav-item">
+            <span id="navbar-red-polygon"></span>
+          </li>
         </ul>
       </div>
     </nav>
     <main class="container-xl px-3">
-      <div class="row" id="main-section">
+      <div class="row pt-4" id="main-section">
         <div class="col-md-6 col-lg-4">
           <section class="" id="featured-stories">
             <h2 class="section-header">
               Featured Stories
             </h2>
-            <article class="card">
+            <article class="card card-border-light">
               <img
                 class="card-img-top"
                 src="./img/articles/featured-1.jpg"
@@ -104,7 +118,7 @@
                 </p>
               </div>
             </article>
-            <article class="card">
+            <article class="card card-border-light">
               <img
                 class="card-img-top"
                 src="./img/articles/featured-2.jpg"
@@ -122,7 +136,7 @@
                 </p>
               </div>
             </article>
-            <article class="card">
+            <article class="card card-border-light">
               <img
                 class="card-img-top"
                 src="./img/articles/featured-3.jpg"
@@ -139,7 +153,7 @@
                 </p>
               </div>
             </article>
-            <article class="card">
+            <article class="card card-border-light">
               <img
                 class="card-img-top"
                 src="./img/articles/featured-4.jpg"
@@ -156,7 +170,7 @@
                 </p>
               </div>
             </article>
-            <article class="card">
+            <article class="card card-border-light">
               <img
                 class="card-img-top"
                 src="./img/articles/featured-5.jpg"
@@ -182,7 +196,7 @@
             <h2 class="section-header">
               Top Story
             </h2>
-            <article class="card">
+            <article class="card card-border-light">
               <img
                 class="card-img-top"
                 src="./img/articles/top-story.jpg"
@@ -204,7 +218,7 @@
           <section id="heroes-of-the-pandemic">
             <h2 class="section-header">Heroes of the pandemic</h2>
             <div class="card-group">
-              <article class="card">
+              <article class="card card-border-light">
                 <img
                   src="./img/heroes-pandemic/1.jpg"
                   class="card-img-top"
@@ -223,7 +237,7 @@
                   </p>
                 </div>
               </article>
-              <article class="card">
+              <article class="card card-border-light">
                 <img
                   src="./img/heroes-pandemic/2.jpg"
                   class="card-img-top"
@@ -241,7 +255,7 @@
                   </p>
                 </div>
               </article>
-              <article class="card">
+              <article class="card card-border-light">
                 <img
                   src="./img/heroes-pandemic/3.jpg"
                   class="card-img-top"
@@ -265,7 +279,7 @@
           <section class="" id="culture-and-travel">
             <h2 class="section-header">Culture & Travel</h2>
             <div class="card-group">
-              <article class="card">
+              <article class="card card-border-light">
                 <img
                   src="./img/culture-travel/1.jpg"
                   class="card-img-top"
@@ -284,7 +298,7 @@
                   </p>
                 </div>
               </article>
-              <article class="card">
+              <article class="card card-border-light">
                 <img
                   src="./img/culture-travel/2.jpg"
                   class="card-img-top"
@@ -303,7 +317,7 @@
                   </p>
                 </div>
               </article>
-              <article class="card">
+              <article class="card card-border-light">
                 <img
                   src="./img/culture-travel/3.jpg"
                   class="card-img-top"
@@ -326,21 +340,27 @@
           </section>
           <section class="" id="more-stories">
             <h2 class="section-header">More stories</h2>
-            <article class="d-flex more-story">
-              <img
-                src="./img/more-stories/1.jpg"
-                alt=""
-                class="more-story-image"
-              />
-              <div class="more-story-content">
-                <h4>
-                  MI Gov On VP Speculation: 'The Job That I Want Is the One That
-                  I Have'
-                </h4>
-                <p>
-                  "I worked for two years to become the governor of the state of
-                  Michigan," Whitmer said.
-                </p>
+            <article class="card mb-3 more-story">
+              <div class="row no-gutters">
+                <div class="col-sm-5">
+                  <img
+                    src="./img/more-stories/1.jpg"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      MI Gov On VP Speculation: 'The Job That I Want Is the One
+                      That I Have'
+                    </h4>
+                    <p class="card-text">
+                      "I worked for two years to become the governor of the
+                      state of Michigan," Whitmer said.
+                    </p>
+                  </div>
+                </div>
               </div>
             </article>
             <article class="d-flex more-story">
