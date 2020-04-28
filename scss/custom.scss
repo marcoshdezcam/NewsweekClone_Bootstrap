@@ -1,4 +1,5 @@
 // IMPORTS
+@import "../scss/fonts.scss";
 @import "../scss/variables.scss";
 @import "../scss/mixins.scss";
 
@@ -18,6 +19,48 @@ nav {
   }
 }
 
+#main-section {
+  // height: 3122px;
+}
+
+.section-header {
+  font: bold 16px/16px "Roboto-Heading", Fallback, sans-serif;
+  color: rgba(3, 3, 3, 0.4);
+  text-transform: uppercase;
+}
+
+#featured-stories {
+  .card-title {
+    font: bold 24px/24px "Roboto-Heading", Fallback, sans-serif;
+  }
+
+  .card-text {
+    font: 15px/20px "Helvetica-Neue", Fallback, sans-serif;
+  }
+}
+
+#top-story {
+  .card-title {
+    font: bold 22px/24px "Roboto-Heading", Fallback, sans-serif;
+  }
+
+  .card-text {
+    font: 15px/20px "Helvetica-Neue", Fallback, sans-serif;
+  }
+}
+
+#heroes-of-the-pandemic,
+#culture-and-travel {
+  .card-title {
+    font: 20px/22px "Lora", serif;
+  }
+
+  .card-text {
+    font: 15px/20px "Helvetica-Neue", sans-serif;
+    color: rgba(39, 39, 39, 0.5);
+  }
+}
+
 #opinion {
   #opinion-cards {
     height: 90%;
@@ -31,6 +74,15 @@ nav {
 
       .opinion-info {
         width: 80%;
+
+        .opinion-title {
+          font: bold 17px/21px "Roboto-Heading", Fallback, sans-serif;
+        }
+
+        .opinion-author {
+          font: bold 17px/21px "Roboto-Heading", Fallback, sans-serif;
+          color: #555;
+        }
       }
     }
   }
@@ -44,6 +96,14 @@ nav {
 
     .more-story-content {
       width: 75%;
+
+      h4 {
+        font: 17px/20px "Roboto-Heading", Fallback, sans-serif;
+      }
+
+      p {
+        font: 15px/20px "Helvetica-Neue", Fallback, sans-serif;
+      }
     }
   }
 }
@@ -70,6 +130,7 @@ nav {
 
         .debate-info {
           width: 75%;
+          font: bold 17px/21px "Roboto-Heading", Fallback, sans-serif;
         }
       }
 
@@ -79,6 +140,7 @@ nav {
 
         .author-name {
           width: 90%;
+          font: bold 14px/21px "Roboto-Heading", Fallback, sans-serif;
         }
 
         .debate-author-img {
@@ -95,7 +157,35 @@ nav {
   }
 
   h4 {
+    font: bold 17px/21px "Roboto-Heading", Fallback, sans-serif;
     width: 75%;
+  }
+}
+
+#in-the-magazine {
+  h3 {
+    font: 20px/20px "Roboto-Heading", Fallback, sans-serif;
+  }
+}
+
+#editors-pick {
+  .card-title {
+    font: 24px/24px "Roboto-Heading", Fallback, sans-serif;
+  }
+
+  .card-text {
+    font: 15px/20px "Helvetica-Neue", Fallback, sans-serif;
+    color: #333;
+  }
+}
+
+#categories {
+  .category-header {
+    font: bold 16px/16px "Roboto-Heading", Fallback, sans-serif;
+  }
+
+  .card-title {
+    font: bold 17px/21px "Roboto-Heading", Fallback, sans-serif;
   }
 }
 

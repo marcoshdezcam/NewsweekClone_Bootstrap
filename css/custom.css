@@ -1,3 +1,27 @@
+/*
+    Maximized font compatibility
+   IE9 Compat Modes
+   IE6-IE8
+   Super Modern Browserswebfont.eot
+   Pretty Modern Browsers
+   Safari, Android, iOS
+   Legacy iOS
+*/
+@font-face {
+  font-family: "Roboto-Heading";
+  src: url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.eot");
+  src: url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.ttf") format("truetype"), url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.svg#Roboto-Heading") format("svg"); }
+
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora-Regular/Lora-Regular.eot");
+  src: url("../fonts/Lora-Regular/Lora-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lora-Regular/Lora-Regular.woff2") format("woff2"), url("../fonts/Lora-Regular/Lora-Regular.woff") format("woff"), url("../fonts/Lora-Regular/Lora-Regular.ttf") format("truetype"), url("../fonts/Lora-Regular/Lora-Regular.svg#Lora") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("../fonts/Helvetica-Neue/HelveticaNeueThin.eot");
+  src: url("../fonts/Helvetica-Neue/HelveticaNeueThin.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica-Neue/HelveticaNeueThin.woff2") format("woff2"), url("../fonts/Helvetica-Neue/HelveticaNeueThin.woff") format("woff"), url("../fonts/Helvetica-Neue/HelveticaNeueThin.ttf") format("truetype"), url("../fonts/Helvetica-Neue/HelveticaNeueThin.svg#Helvetica-Neue") format("svg"); }
+
 body {
   background-color: #f4f5f6; }
 
@@ -7,6 +31,32 @@ nav #newsweek_Logo {
 nav .btn {
   width: 80px; }
 
+.section-header {
+  font: bold 16px/16px "Roboto-Heading", Fallback, sans-serif;
+  color: rgba(3, 3, 3, 0.4);
+  text-transform: uppercase; }
+
+#featured-stories .card-title {
+  font: bold 24px/24px "Roboto-Heading", Fallback, sans-serif; }
+
+#featured-stories .card-text {
+  font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
+
+#top-story .card-title {
+  font: bold 22px/24px "Roboto-Heading", Fallback, sans-serif; }
+
+#top-story .card-text {
+  font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
+
+#heroes-of-the-pandemic .card-title,
+#culture-and-travel .card-title {
+  font: 20px/22px "Lora", serif; }
+
+#heroes-of-the-pandemic .card-text,
+#culture-and-travel .card-text {
+  font: 15px/20px "Helvetica-Neue", sans-serif;
+  color: rgba(39, 39, 39, 0.5); }
+
 #opinion #opinion-cards {
   height: 90%; }
   #opinion #opinion-cards .opinion-card {
@@ -15,12 +65,21 @@ nav .btn {
       width: 20%; }
     #opinion #opinion-cards .opinion-card .opinion-info {
       width: 80%; }
+      #opinion #opinion-cards .opinion-card .opinion-info .opinion-title {
+        font: bold 17px/21px "Roboto-Heading", Fallback, sans-serif; }
+      #opinion #opinion-cards .opinion-card .opinion-info .opinion-author {
+        font: bold 17px/21px "Roboto-Heading", Fallback, sans-serif;
+        color: #555; }
 
 #more-stories .more-story .more-story-image {
   width: 25%; }
 
 #more-stories .more-story .more-story-content {
   width: 75%; }
+  #more-stories .more-story .more-story-content h4 {
+    font: 17px/20px "Roboto-Heading", Fallback, sans-serif; }
+  #more-stories .more-story .more-story-content p {
+    font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
 
 #the-debate .debate-container {
   height: 90%; }
@@ -35,12 +94,14 @@ nav .btn {
       #the-debate .debate-container article .debate-vs .debate-vs-img {
         width: 25%; }
       #the-debate .debate-container article .debate-vs .debate-info {
-        width: 75%; }
+        width: 75%;
+        font: bold 17px/21px "Roboto-Heading", Fallback, sans-serif; }
     #the-debate .debate-container article .debate-author {
       width: 100%;
       height: 50%; }
       #the-debate .debate-container article .debate-author .author-name {
-        width: 90%; }
+        width: 90%;
+        font: bold 14px/21px "Roboto-Heading", Fallback, sans-serif; }
       #the-debate .debate-container article .debate-author .debate-author-img {
         width: 10%; }
 
@@ -48,7 +109,24 @@ nav .btn {
   width: 25%; }
 
 #latest-news h4 {
+  font: bold 17px/21px "Roboto-Heading", Fallback, sans-serif;
   width: 75%; }
+
+#in-the-magazine h3 {
+  font: 20px/20px "Roboto-Heading", Fallback, sans-serif; }
+
+#editors-pick .card-title {
+  font: 24px/24px "Roboto-Heading", Fallback, sans-serif; }
+
+#editors-pick .card-text {
+  font: 15px/20px "Helvetica-Neue", Fallback, sans-serif;
+  color: #333; }
+
+#categories .category-header {
+  font: bold 16px/16px "Roboto-Heading", Fallback, sans-serif; }
+
+#categories .card-title {
+  font: bold 17px/21px "Roboto-Heading", Fallback, sans-serif; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)

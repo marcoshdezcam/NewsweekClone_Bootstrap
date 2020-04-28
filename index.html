@@ -14,14 +14,17 @@
 
   <body>
     <nav
-      class="navbar navbar-expand-lg justify-content-lg-between navbar-dark bg-primary"
+      class="navbar sticky-top navbar-expand-lg justify-content-lg-between navbar-dark bg-primary"
     >
       <a class="navbar-brand" href="#">
         <img src="./img/Newsweek_Logo.png" id="newsweek_Logo" class="" alt="" />
       </a>
-      <div class=".d-none">
-        <div id="location">LOCATION</div>
-        <div id="date">DATE</div>
+      <div class="">
+        <div class="d-none d-md-block d-lg-block d-xl-block" id="location">
+          <i class="fas fa-cloud-sun"></i>
+          Puebla City, MX >
+        </div>
+        <div class="d-none d-lg-block d-xl-block" id="date">DATE</div>
       </div>
       <div class="">
         <button type="button" class="btn btn-primary">
@@ -74,18 +77,9 @@
           </li>
         </ul>
       </div>
-      <!-- <div class="col-sm-6">
-        
-      </div>
-      <div class="col-sm-6">
-        <div>
-          
-          
-        </div>
-      </div> -->
     </nav>
     <main class="container-xl px-3">
-      <div class="row">
+      <div class="row" id="main-section">
         <div class="col-md-6 col-lg-4">
           <section class="" id="featured-stories">
             <h2 class="section-header">
@@ -183,7 +177,7 @@
             </article>
           </section>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 overflow-auto">
           <section class="" id="top-story">
             <h2 class="section-header">
               Top Story
@@ -819,7 +813,7 @@
             <h3 class="card-title">
               'My Small Family Business Failed To Get PPP Money'
             </h3>
-            <p class="card-title">
+            <p class="card-text">
               At Bagels Etc, we needed about $40,000, a drop in a $349 billion
               pot.
             </p>
@@ -830,7 +824,7 @@
             <h3 class="card-title">
               Spike in Big Cat Poaching During Coronavirus Lockdown in Colombia
             </h3>
-            <p class="card-title">
+            <p class="card-text">
               With their neighbors inside, some hunters are spending quarantine
               targeting jaguars, pumas and ocelots," Esteban Payán from Panthera
               told Newsweek.
@@ -843,7 +837,7 @@
               COVID-19 Could Claim 100,000 More Lives if Jail Populations Stay
               The Same
             </h3>
-            <p class="card-title">
+            <p class="card-text">
               "Every day that goes by without action means more people will
               die," the ACLU has warned.
             </p>
@@ -855,7 +849,7 @@
               Afghan Refugee Gives Out Food Vouchers to Those Hit by Coronavirus
               Crisis
             </h3>
-            <p class="card-title">
+            <p class="card-text">
               Nebraska small business owner Nemat Azizi helps out-of-work
               restaurant and salon workers with free $150 grocery vouchers.
             </p>
@@ -868,7 +862,7 @@
               China, a Large American Creditor, Won't Be Funding Your Stimulus
               Check
             </h3>
-            <p class="card-title">
+            <p class="card-text">
               The U.S. Treasury will issue trillions of dollars in new debt to
               fund the massive coronavirus stimulus program. Who will buy it?
             </p>
@@ -880,7 +874,7 @@
               Prince Louis Birthday Photo Shows Rainbow of Hope Painted With
               Mother
             </h3>
-            <p class="card-title">
+            <p class="card-text">
               Prince Louis turns two today and mother Kate Middleton has
               released new images of him covered in paint, creating a rainbow
               picture as part of a trend aimed at spreading hope.
@@ -893,7 +887,7 @@
               Texas Woman Donates Most of Stimulus Check After Seeing Lines at
               Food Bank
             </h3>
-            <p class="card-title">
+            <p class="card-text">
               Toi Cudworth donated $950 to the San Antonio Food Bank and also
               bought groceries for a neighbor who was recently laid off.
             </p>
@@ -904,7 +898,7 @@
             <h3 class="card-title">
               World Book Day: Free Books and Events to Help Celebrate at Home
             </h3>
-            <p class="card-title">
+            <p class="card-text">
               Curl up with a coffee and dig into a good book.
             </p>
           </article>
@@ -1046,13 +1040,13 @@
             <div class="main col-md-8 row">
               <article class="card col-md-6">
                 <img src="./img/category-business/main-1.jpg" alt="" />
-                <h3>
+                <h3 class="card-title">
                   Fogo de Chão To Receive $20 Million In Small Business Loan
                 </h3>
               </article>
               <article class="card col-md-6">
                 <img src="./img/category-business/main-2.jpg" alt="" />
-                <h3>
+                <h3 class="card-title">
                   Low Oil Prices Could Stretch Into May, Analysts Say Following
                   Collapse
                 </h3>
@@ -1065,7 +1059,7 @@
                   alt=""
                   class="card-img-left col-sm-4 col-md-6 col-lg-3"
                 />
-                <h4>
+                <h4 class="card-title">
                   Amazon Staffers Protest Company After 75 Test Positive for
                   Coronavirus
                 </h4>
@@ -1076,7 +1070,7 @@
                   alt=""
                   class="card-img-left col-sm-4 col-md-6 col-lg-3"
                 />
-                <h4>
+                <h4 class="card-title">
                   US Gas Prices Hit Record Lows as Crude Oil Crashes Below $0
                   For First Time
                 </h4>
@@ -1087,7 +1081,7 @@
                   alt=""
                   class="card-img-left col-sm-4 col-md-6 col-lg-3"
                 />
-                <h4>
+                <h4 class="card-title">
                   U.S. Oil Prices Drop to Lowest in Two Decades as Crude Storage
                   Fills Up
                 </h4>
@@ -1101,14 +1095,14 @@
             <div class="main col-md-8 row">
               <article class="card col-md-6">
                 <img src="./img/category-tech_and_science/main-1.jpg" alt="" />
-                <h3>
+                <h3 class="card-title">
                   Levels of Ocean Biodiversity Have Barely Changed for Millions
                   of Years
                 </h3>
               </article>
               <article class="card col-md-6">
                 <img src="./img/category-tech_and_science/main-2.jpg" alt="" />
-                <h3>
+                <h3 class="card-title">
                   Thailand's Elephants May Starve as Tourism Stalls During
                   COVID-19 Crisis
                 </h3>
@@ -1121,7 +1115,7 @@
                   alt=""
                   class="card-img-left col-sm-4 col-md-6 col-lg-3"
                 />
-                <h4>
+                <h4 class="card-title">
                   Elon Musk Says SpaceX is 'Fixing' Brightness of Starlink
                   Satellites
                 </h4>
@@ -1132,7 +1126,7 @@
                   alt=""
                   class="card-img-left col-sm-4 col-md-6 col-lg-3"
                 />
-                <h4>
+                <h4 class="card-title">
                   Zoom's New App Update Combats 'Zoombombing' and Boosts
                   Encryption
                 </h4>
@@ -1143,7 +1137,7 @@
                   alt=""
                   class="card-img-left col-sm-4 col-md-6 col-lg-3"
                 />
-                <h4>
+                <h4 class="card-title">
                   PSN Down? PlayStation Outage Hits Games, Applications and
                   Online Features
                 </h4>
@@ -1157,14 +1151,14 @@
             <div class="main col-md-8 row">
               <article class="card col-md-6">
                 <img src="./img/category-culture/main-1.jpg" alt="" />
-                <h3>
+                <h3 class="card-title">
                   We Should Talk About That Tyler Perry Cameo on Kenya Barris'
                   '#blackAF'
                 </h3>
               </article>
               <article class="card col-md-6">
                 <img src="./img/category-culture/main-2.jpg" alt="" />
-                <h3>
+                <h3 class="card-title">
                   Here's Why People Think Elon Musk and Grimes Named Their Child
                   Influenza
                 </h3>
@@ -1177,7 +1171,7 @@
                   alt=""
                   class="card-img-left col-sm-4 col-md-6 col-lg-3"
                 />
-                <h4>
+                <h4 class="card-title">
                   Meet The Boyfriend Who Wants His Girlfriend To Pay Him For
                   Sleeping Over
                 </h4>
@@ -1188,7 +1182,7 @@
                   alt=""
                   class="card-img-left col-sm-4 col-md-6 col-lg-3"
                 />
-                <h4>
+                <h4 class="card-title">
                   Celebrate World Book Day With Some of Newsweek's Favorite
                   Lockdown Reads
                 </h4>
@@ -1199,7 +1193,7 @@
                   alt=""
                   class="card-img-left col-sm-4 col-md-6 col-lg-3"
                 />
-                <h4>
+                <h4 class="card-title">
                   Tom Hanks Gives Typewriter to Bullied Australian Boy Named
                   Corona
                 </h4>
@@ -1213,13 +1207,13 @@
             <div class="main col-md-8 row">
               <article class="card col-md-6">
                 <img src="./img/category-sports/main-1.jpg" alt="" />
-                <h3>
+                <h3 class="card-title">
                   NFL Draft 2020: Latest Odds and Prop Bets for the First Round
                 </h3>
               </article>
               <article class="card col-md-6">
                 <img src="./img/category-sports/main-2.jpg" alt="" />
-                <h3>
+                <h3 class="card-title">
                   2020 NFL Draft: Schedule, Start Time, Where to Watch on TV and
                   Online
                 </h3>
@@ -1232,7 +1226,7 @@
                   alt=""
                   class="card-img-left col-sm-4 col-md-6 col-lg-3"
                 />
-                <h4>
+                <h4 class="card-title">
                   2020 NFL Draft Order: Which Teams Are More Likely to Trade
                   Picks?
                 </h4>
@@ -1243,7 +1237,9 @@
                   alt=""
                   class="card-img-left col-sm-4 col-md-6 col-lg-3"
                 />
-                <h4>NFL Draft 2020 Expected to Shatter Betting Records</h4>
+                <h4 class="card-title">
+                  NFL Draft 2020 Expected to Shatter Betting Records
+                </h4>
               </article>
               <article class="d-flex">
                 <img
@@ -1251,7 +1247,7 @@
                   alt=""
                   class="card-img-left col-sm-4 col-md-6 col-lg-3"
                 />
-                <h4>
+                <h4 class="card-title">
                   Brady, Manning to play with Tiger Woods, Phil Mickelson in
                   Charity Match
                 </h4>
