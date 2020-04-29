@@ -209,8 +209,16 @@ nav {
     font: bold 16px/16px 'Roboto-Heading', Fallback, sans-serif;
   }
 
-  .card-title {
-    font: bold 17px/21px 'Roboto-Heading', Fallback, sans-serif;
+  .main {
+    .card-title {
+      font: bold 22px/22px 'Roboto-Heading', Fallback, sans-serif;
+    }
+  }
+
+  .others {
+    .card-title {
+      font: bold 17px/21px 'Roboto-Heading', Fallback, sans-serif;
+    }
   }
 }
 
