@@ -1,7 +1,28 @@
 @include media-breakpoint-down(sm) {
   nav {
+    #top-sign-in {
+      width: 50px;
+    }
+
+    #top-subscribe {
+      width: 75px;
+    }
+
+    #menu-icon {
+      width: 24px;
+      height: 30px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  nav {
     .btn {
-      width: 100px;
+      font: 18px/18px 'Roboto-Heading', Fallback, sans-serif;
+
+      #top-subscribe {
+        width: 126px;
+      }
     }
   }
 }

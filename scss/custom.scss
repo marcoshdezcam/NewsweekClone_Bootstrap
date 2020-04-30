@@ -16,6 +16,15 @@ nav {
 
   #location {
     font: 15px/34px 'Roboto-Heading', Fallback, sans-serif;
+
+    #weather-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    #white-arrow {
+      vertical-align: baseline;
+    }
   }
 
   #date {
@@ -23,20 +32,39 @@ nav {
   }
 
   #newsweek_Logo {
-    width: 130px;
+    width: 132px;
+    height: 20px;
+    fill: rgb(255, 255, 255);
   }
 
   .btn {
-    font: bold 17px/24px 'Roboto-Heading', Fallback, sans-serif;
+    border-radius: 0;
+    font: 14px/14px 'Roboto-Heading', Fallback, sans-serif;
     text-transform: uppercase;
     width: 130px;
   }
 
   #top-sign-in {
+    width: 80px;
   }
 
   #top-subscribe {
     color: #ff0500;
+
+    #red-arrow {
+      width: 8px;
+      height: 14px;
+      fill: #f72210;
+      vertical-align: baseline;
+    }
+  }
+
+  #menu-icon {
+    background-image: url("../img/menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
   }
 
   #collapsibleCategoriesMenu {

@@ -22,16 +22,37 @@ nav {
   max-width: 1310px; }
   nav #location {
     font: 15px/34px 'Roboto-Heading', Fallback, sans-serif; }
+    nav #location #weather-icon {
+      width: 24px;
+      height: 24px; }
+    nav #location #white-arrow {
+      vertical-align: baseline; }
   nav #date {
     font: 16px/34px 'Helvetica-Neue', Fallback, sans-serif; }
   nav #newsweek_Logo {
-    width: 130px; }
+    width: 132px;
+    height: 20px;
+    fill: white; }
   nav .btn {
-    font: bold 17px/24px 'Roboto-Heading', Fallback, sans-serif;
+    border-radius: 0;
+    font: 14px/14px 'Roboto-Heading', Fallback, sans-serif;
     text-transform: uppercase;
     width: 130px; }
+  nav #top-sign-in {
+    width: 80px; }
   nav #top-subscribe {
     color: #ff0500; }
+    nav #top-subscribe #red-arrow {
+      width: 8px;
+      height: 14px;
+      fill: #f72210;
+      vertical-align: baseline; }
+  nav #menu-icon {
+    background-image: url("../img/menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px; }
   nav #collapsibleCategoriesMenu {
     background-color: white;
     width: 100%; }
@@ -7391,5 +7412,16 @@ a.text-red-news:hover, a.text-red-news:focus {
     border-color: #dee2e6; } }
 
 @media (max-width: 767.98px) {
+  nav #top-sign-in {
+    width: 50px; }
+  nav #top-subscribe {
+    width: 75px; }
+  nav #menu-icon {
+    width: 24px;
+    height: 30px; } }
+
+@media (min-width: 768px) {
   nav .btn {
-    width: 100px; } }
+    font: 18px/18px 'Roboto-Heading', Fallback, sans-serif; }
+    nav .btn #top-subscribe {
+      width: 126px; } }
