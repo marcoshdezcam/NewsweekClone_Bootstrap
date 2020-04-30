@@ -36,7 +36,7 @@
           </g>
         </svg>
       </a>
-      <div class="flex-md-grow-1 flex-lg-grow-0 order-lg-1">
+      <div class="flex-md-grow-1 flex-lg-grow-0 order-lg-1 m-lg-4">
         <div class="d-none d-md-block d-lg-block d-xl-block" id="location">
           <img src="./img/weather-icon.png" alt="" id="weather-icon" />
           18°Puebla City, MX
@@ -56,7 +56,7 @@
         </button>
         <button
           type="button"
-          class="btn btn-secondary px-0 py-lg-2 mr-4"
+          class="btn btn-secondary px-0 py-lg-2 mr-4 mr-lg-2"
           id="top-subscribe"
         >
           Subscribe
@@ -90,14 +90,6 @@
             </g>
           </svg>
         </button>
-        <!-- <img
-          src="./img/menu.png"
-          alt=""
-          class="navbar-toggler"
-          id="menu-icon"
-          data-toggle="collapse"
-          data-target="#collapsibleCategoriesMenu"
-        /> -->
         <button
           class="navbar-toggler"
           id="menu-icon"
@@ -107,55 +99,57 @@
         ></button>
       </div>
       <div
-        class="order-lg-4 collapse navbar-collapse"
+        class="order-lg-4 collapse navbar-collapse py-lg-3 w-100 border-bottom"
         id="collapsibleCategoriesMenu"
       >
-        <ul class="navbar-nav" id="category-links">
-          <li class="nav-item">
+        <ul
+          class="navbar-nav d-flex justify-content-between w-90"
+          id="category-links"
+        >
+          <li class="nav-item px-xl-3 border-right">
             <a class="nav-link" href="#">U.S.</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-xl-3 border-right">
             <a class="nav-link" href="#">World</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-xl-3 border-right">
             <a class="nav-link" href="#">Business</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-xl-3 border-right">
             <a class="nav-link" href="#">Tech & Science</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-xl-3 border-right">
             <a class="nav-link" href="#">Culture</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-xl-3 border-right">
             <a class="nav-link" href="#">Newsgeek</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-xl-3 border-right">
             <a class="nav-link" href="#">Sports</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-xl-3 border-right">
             <a class="nav-link" href="#">Health</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-xl-3 border-right">
             <a class="nav-link" href="#">The Debate</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-xl-3 border-right">
             <a class="nav-link" href="#">Vantage</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-xl-3">
             <a class="nav-link" href="#">Wheather</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-xl-3">
             <a class="nav-link" href="#">Search</a>
           </li>
-          <li class="nav-item">
-            <span id="navbar-red-polygon"></span>
-          </li>
+          <li class="nav-item px-xl-3"></li>
         </ul>
+        <div id="navbar-red-polygon"></div>
       </div>
     </nav>
     <main class="container-xl px-3">
-      <div class="row pt-4" id="main-section">
-        <div class="col-md-6 col-lg-4">
+      <div class="row pt-4 d-flex justify-content-between" id="main-section">
+        <div class="col-md-6 col-lg-3">
           <section class="" id="featured-stories">
             <h2 class="section-header">
               Featured Stories
@@ -252,7 +246,7 @@
             </article>
           </section>
         </div>
-        <div class="col-md-6 col-lg-4 overflow-auto">
+        <div class="col-md-6 col-lg-6">
           <section class="" id="top-story">
             <h2 class="section-header">
               Top Story
@@ -636,7 +630,7 @@
             </article>
           </section>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
           <section class="" id="opinion">
             <h2 class="section-header">Opinion</h2>
             <div class="" id="opinion-cards">

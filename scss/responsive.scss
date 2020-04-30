@@ -9,7 +9,7 @@
     }
 
     #menu-icon {
-      width: 24px;
+      width: 26px;
       height: 30px;
     }
   }
@@ -23,6 +23,23 @@
       #top-subscribe {
         width: 126px;
       }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  nav {
+    #newsweek_Logo {
+      width: 395px;
+      height: 60px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  #collapsibleCategoriesMenu {
+    a {
+      font: 14px/17px 'Roboto-Heading', Fallback, sans-serif;
     }
   }
 }

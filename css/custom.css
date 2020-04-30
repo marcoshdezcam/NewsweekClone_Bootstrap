@@ -55,10 +55,30 @@ nav {
     height: 35px; }
   nav #collapsibleCategoriesMenu {
     background-color: white;
-    width: 100%; }
+    width: 100%;
+    position: relative; }
     nav #collapsibleCategoriesMenu a {
       color: black;
-      font: 19px/24px 'Roboto-Heading', Fallback, sans-serif; }
+      font: 1.4vw/1.6vw 'Roboto-Heading', Fallback, sans-serif; }
+    nav #collapsibleCategoriesMenu a:hover {
+      color: #f72210; }
+    nav #collapsibleCategoriesMenu #search-input {
+      background: url(../img/icon-search-glass.svg) no-repeat;
+      background-size: contain;
+      background-position: right top;
+      width: 20px;
+      height: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333; }
+    nav #collapsibleCategoriesMenu #navbar-red-polygon {
+      width: 65px;
+      height: 15px;
+      background-color: #ff0500;
+      background-size: cover;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+      position: absolute;
+      top: 0;
+      right: 0; }
 
 #main-section .card-border-light {
   border: white; }
@@ -7417,7 +7437,7 @@ a.text-red-news:hover, a.text-red-news:focus {
   nav #top-subscribe {
     width: 75px; }
   nav #menu-icon {
-    width: 24px;
+    width: 26px;
     height: 30px; } }
 
 @media (min-width: 768px) {
@@ -7425,3 +7445,12 @@ a.text-red-news:hover, a.text-red-news:focus {
     font: 18px/18px 'Roboto-Heading', Fallback, sans-serif; }
     nav .btn #top-subscribe {
       width: 126px; } }
+
+@media (min-width: 992px) {
+  nav #newsweek_Logo {
+    width: 395px;
+    height: 60px; } }
+
+@media (min-width: 1200px) {
+  #collapsibleCategoriesMenu a {
+    font: 14px/17px 'Roboto-Heading', Fallback, sans-serif; } }
