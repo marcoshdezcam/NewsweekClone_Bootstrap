@@ -73,7 +73,7 @@ nav {
 
     a {
       color: rgb(0, 0, 0);
-      font: 1.4vw/1.6vw 'Roboto-Heading', Fallback, sans-serif;
+      font: 17px/17px 'Roboto-Heading', Fallback, sans-serif;
     }
 
     a:hover {
@@ -93,7 +93,7 @@ nav {
     position: relative;
 
     #navbar-red-polygon {
-      width: 65px;
+      width: 75px;
       height: 15px;
       background-color: #ff0500;
       background-size: cover;
@@ -150,28 +150,36 @@ nav {
 }
 
 #opinion {
+  height: 385px;
+
   #opinion-cards {
     height: 90%;
+    font: bold 15px/20px 'Roboto-Heading', Fallback, sans-serif;
 
-    .opinion-card {
-      height: 25%;
+    .card-body {
+      padding: 0 0 0 5px;
+    }
 
-      img {
-        width: 20%;
+    .card-title {
+      a {
+        color: black;
       }
 
-      .opinion-info {
-        width: 80%;
-
-        .opinion-title {
-          font: bold 17px/21px 'Roboto-Heading', Fallback, sans-serif;
-        }
-
-        .opinion-author {
-          color: #555;
-          font: bold 17px/21px 'Roboto-Heading', Fallback, sans-serif;
-        }
+      a:hover {
+        color: #f72210;
+        text-decoration: none;
       }
+    }
+
+    .opinion-author {
+      color: #555;
+      text-transform: uppercase;
+    }
+
+    .card-img {
+      width: 63px;
+      height: 63px;
+      margin: auto auto;
     }
   }
 }
@@ -193,8 +201,9 @@ nav {
     height: 90%;
 
     #vs-icon {
-      height: 10%;
-      width: 100%;
+      height: 40px;
+      width: 40px;
+      background-color: black;
     }
 
     article {

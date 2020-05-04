@@ -59,7 +59,7 @@ nav {
     position: relative; }
     nav #collapsibleCategoriesMenu a {
       color: black;
-      font: 1.4vw/1.6vw 'Roboto-Heading', Fallback, sans-serif; }
+      font: 17px/17px 'Roboto-Heading', Fallback, sans-serif; }
     nav #collapsibleCategoriesMenu a:hover {
       color: #f72210; }
     nav #collapsibleCategoriesMenu #search-input {
@@ -71,7 +71,7 @@ nav {
       font-family: Arial, Helvetica, sans-serif;
       color: #333; }
     nav #collapsibleCategoriesMenu #navbar-red-polygon {
-      width: 65px;
+      width: 75px;
       height: 15px;
       background-color: #ff0500;
       background-size: cover;
@@ -109,19 +109,25 @@ nav {
   color: rgba(39, 39, 39, 0.5);
   font: 15px/20px 'Helvetica-Neue', sans-serif; }
 
-#opinion #opinion-cards {
-  height: 90%; }
-  #opinion #opinion-cards .opinion-card {
-    height: 25%; }
-    #opinion #opinion-cards .opinion-card img {
-      width: 20%; }
-    #opinion #opinion-cards .opinion-card .opinion-info {
-      width: 80%; }
-      #opinion #opinion-cards .opinion-card .opinion-info .opinion-title {
-        font: bold 17px/21px 'Roboto-Heading', Fallback, sans-serif; }
-      #opinion #opinion-cards .opinion-card .opinion-info .opinion-author {
-        color: #555;
-        font: bold 17px/21px 'Roboto-Heading', Fallback, sans-serif; }
+#opinion {
+  height: 385px; }
+  #opinion #opinion-cards {
+    height: 90%;
+    font: bold 15px/20px 'Roboto-Heading', Fallback, sans-serif; }
+    #opinion #opinion-cards .card-body {
+      padding: 0 0 0 5px; }
+    #opinion #opinion-cards .card-title a {
+      color: black; }
+    #opinion #opinion-cards .card-title a:hover {
+      color: #f72210;
+      text-decoration: none; }
+    #opinion #opinion-cards .opinion-author {
+      color: #555;
+      text-transform: uppercase; }
+    #opinion #opinion-cards .card-img {
+      width: 63px;
+      height: 63px;
+      margin: auto auto; }
 
 #more-stories .more-story .card-title {
   font: 17px/20px 'Roboto-Heading', Fallback, sans-serif; }
@@ -132,8 +138,9 @@ nav {
 #the-debate .debate-container {
   height: 90%; }
   #the-debate .debate-container #vs-icon {
-    height: 10%;
-    width: 100%; }
+    height: 40px;
+    width: 40px;
+    background-color: black; }
   #the-debate .debate-container article {
     height: 45%; }
     #the-debate .debate-container article .debate-vs {
@@ -208,6 +215,7 @@ nav {
   --light: #f8f9fa;
   --dark: #343a40;
   --red-news: #ff0500;
+  --blue-news: #f92859;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1591,6 +1599,23 @@ pre {
   .table-hover .table-red-news:hover > th {
     background-color: #ffa09f; }
 
+.table-blue-news,
+.table-blue-news > th,
+.table-blue-news > td {
+  background-color: #fdc3d1; }
+
+.table-blue-news th,
+.table-blue-news td,
+.table-blue-news thead th,
+.table-blue-news tbody + tbody {
+  border-color: #fc8fa9; }
+
+.table-hover .table-blue-news:hover {
+  background-color: #fcaabe; }
+  .table-hover .table-blue-news:hover > td,
+  .table-hover .table-blue-news:hover > th {
+    background-color: #fcaabe; }
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2284,6 +2309,32 @@ fieldset:disabled a.btn {
     .show > .btn-red-news.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(255, 43, 38, 0.5); }
 
+.btn-blue-news {
+  color: #fff;
+  background-color: #f92859;
+  border-color: #f92859; }
+  .btn-blue-news:hover {
+    color: #fff;
+    background-color: #f4073e;
+    border-color: #e8063b; }
+  .btn-blue-news:focus, .btn-blue-news.focus {
+    color: #fff;
+    background-color: #f4073e;
+    border-color: #e8063b;
+    box-shadow: 0 0 0 0.2rem rgba(250, 72, 114, 0.5); }
+  .btn-blue-news.disabled, .btn-blue-news:disabled {
+    color: #fff;
+    background-color: #f92859;
+    border-color: #f92859; }
+  .btn-blue-news:not(:disabled):not(.disabled):active, .btn-blue-news:not(:disabled):not(.disabled).active,
+  .show > .btn-blue-news.dropdown-toggle {
+    color: #fff;
+    background-color: #e8063b;
+    border-color: #db0638; }
+    .btn-blue-news:not(:disabled):not(.disabled):active:focus, .btn-blue-news:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-blue-news.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(250, 72, 114, 0.5); }
+
 .btn-outline-primary {
   color: #ff0500;
   border-color: #ff0500; }
@@ -2472,6 +2523,27 @@ fieldset:disabled a.btn {
     .btn-outline-red-news:not(:disabled):not(.disabled):active:focus, .btn-outline-red-news:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-red-news.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(255, 5, 0, 0.5); }
+
+.btn-outline-blue-news {
+  color: #f92859;
+  border-color: #f92859; }
+  .btn-outline-blue-news:hover {
+    color: #fff;
+    background-color: #f92859;
+    border-color: #f92859; }
+  .btn-outline-blue-news:focus, .btn-outline-blue-news.focus {
+    box-shadow: 0 0 0 0.2rem rgba(249, 40, 89, 0.5); }
+  .btn-outline-blue-news.disabled, .btn-outline-blue-news:disabled {
+    color: #f92859;
+    background-color: transparent; }
+  .btn-outline-blue-news:not(:disabled):not(.disabled):active, .btn-outline-blue-news:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-blue-news.dropdown-toggle {
+    color: #fff;
+    background-color: #f92859;
+    border-color: #f92859; }
+    .btn-outline-blue-news:not(:disabled):not(.disabled):active:focus, .btn-outline-blue-news:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-blue-news.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(249, 40, 89, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -3997,6 +4069,16 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(255, 5, 0, 0.5); }
 
+.badge-blue-news {
+  color: #fff;
+  background-color: #f92859; }
+  a.badge-blue-news:hover, a.badge-blue-news:focus {
+    color: #fff;
+    background-color: #e8063b; }
+  a.badge-blue-news:focus, a.badge-blue-news.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(249, 40, 89, 0.5); }
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -4113,6 +4195,15 @@ input[type="button"].btn-block {
     border-top-color: #ffa09f; }
   .alert-red-news .alert-link {
     color: #520200; }
+
+.alert-blue-news {
+  color: #81152e;
+  background-color: #fed4de;
+  border-color: #fdc3d1; }
+  .alert-blue-news hr {
+    border-top-color: #fcaabe; }
+  .alert-blue-news .alert-link {
+    color: #550e1e; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -4402,6 +4493,17 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #850300;
     border-color: #850300; }
+
+.list-group-item-blue-news {
+  color: #81152e;
+  background-color: #fdc3d1; }
+  .list-group-item-blue-news.list-group-item-action:hover, .list-group-item-blue-news.list-group-item-action:focus {
+    color: #81152e;
+    background-color: #fcaabe; }
+  .list-group-item-blue-news.list-group-item-action.active {
+    color: #fff;
+    background-color: #81152e;
+    border-color: #81152e; }
 
 .close {
   float: right;
@@ -5094,6 +5196,14 @@ button.bg-red-news:hover,
 button.bg-red-news:focus {
   background-color: #cc0400 !important; }
 
+.bg-blue-news {
+  background-color: #f92859 !important; }
+
+a.bg-blue-news:hover, a.bg-blue-news:focus,
+button.bg-blue-news:hover,
+button.bg-blue-news:focus {
+  background-color: #e8063b !important; }
+
 .bg-white {
   background-color: #fff !important; }
 
@@ -5156,6 +5266,9 @@ button.bg-red-news:focus {
 
 .border-red-news {
   border-color: #ff0500 !important; }
+
+.border-blue-news {
+  border-color: #f92859 !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -7414,6 +7527,12 @@ a.text-dark:hover, a.text-dark:focus {
 a.text-red-news:hover, a.text-red-news:focus {
   color: #b30400 !important; }
 
+.text-blue-news {
+  color: #f92859 !important; }
+
+a.text-blue-news:hover, a.text-blue-news:focus {
+  color: #cf0635 !important; }
+
 .text-body {
   color: #212529 !important; }
 
@@ -7526,7 +7645,3 @@ a.text-red-news:hover, a.text-red-news:focus {
   nav #newsweek_Logo {
     width: 395px;
     height: 60px; } }
-
-@media (min-width: 1200px) {
-  #collapsibleCategoriesMenu a {
-    font: 14px/17px 'Roboto-Heading', Fallback, sans-serif; } }
