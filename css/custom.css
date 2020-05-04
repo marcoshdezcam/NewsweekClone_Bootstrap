@@ -137,6 +137,10 @@ nav {
 #more-stories .more-story .card-text {
   font: 15px/20px 'Helvetica-Neue', Fallback, sans-serif; }
 
+#more-stories .more-story .card-img {
+  width: 95px;
+  height: 95px; }
+
 #the-debate .debate-container {
   height: 90%; }
   #the-debate .debate-container #vs-icon {
