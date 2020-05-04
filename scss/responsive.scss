@@ -25,6 +25,13 @@
       }
     }
   }
+
+  #latest-news {
+    .latest-news-img {
+      width: 95px;
+      height: 95px;
+    }
+  }
 }
 
 @include media-breakpoint-up(lg) {

@@ -172,10 +172,11 @@ nav {
         z-index: 3; }
 
 #latest-news .latest-news-img {
-  width: 25%; }
+  width: 95px;
+  height: 95px; }
 
 #latest-news h4 {
-  font: bold 17px/21px 'Roboto-Heading', Fallback, sans-serif;
+  font: bold 15px/20px 'Roboto-Heading', Fallback, sans-serif;
   width: 75%; }
 
 #in-the-magazine h3 {
@@ -7762,7 +7763,10 @@ a.text-blue-news:hover, a.text-blue-news:focus {
   nav .btn {
     font: 18px/18px 'Roboto-Heading', Fallback, sans-serif; }
     nav .btn #top-subscribe {
-      width: 126px; } }
+      width: 126px; }
+  #latest-news .latest-news-img {
+    width: 95px;
+    height: 95px; } }
 
 @media (min-width: 992px) {
   nav #newsweek_Logo {
