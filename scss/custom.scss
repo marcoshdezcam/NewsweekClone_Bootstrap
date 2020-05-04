@@ -154,13 +154,14 @@ nav {
 
   #opinion-cards {
     height: 90%;
-    font: bold 15px/20px 'Roboto-Heading', Fallback, sans-serif;
 
     .card-body {
       padding: 0 0 0 5px;
     }
 
     .card-title {
+      font: bold 16px/20px 'Roboto-Heading', Fallback, sans-serif;
+
       a {
         color: black;
       }
@@ -172,6 +173,7 @@ nav {
     }
 
     .opinion-author {
+      font: bold 14px/16px 'Roboto-Heading', Fallback, sans-serif;
       color: #555;
       text-transform: uppercase;
     }
@@ -201,31 +203,36 @@ nav {
     height: 90%;
 
     #vs-icon {
+      font: normal 17px/20px 'Roboto-Heading', Fallback, sans-serif;
       height: 40px;
       width: 40px;
+      color: white;
       background-color: black;
+      text-align: center;
+      padding: 10px 0;
     }
 
     article {
       height: 45%;
+      border-width: 4px !important;
 
-      .debate-vs {
-        height: 50%;
-        width: 100%;
-
-        .debate-vs-img {
-          width: 25%;
-        }
-
-        .debate-info {
-          font: bold 17px/21px 'Roboto-Heading', Fallback, sans-serif;
-          width: 75%;
-        }
+      .debate-info {
+        font: bold 17px/21px 'Roboto-Heading', Fallback, sans-serif;
+        width: 75%;
       }
 
       .debate-author {
         height: 50%;
         width: 100%;
+
+        #author-lines {
+          width: 100%;
+          height: 5px;
+          top: 15px;
+          position: relative;
+          z-index: 2;
+          border-color: #d9d9d9;
+        }
 
         .author-name {
           font: bold 14px/21px 'Roboto-Heading', Fallback, sans-serif;
@@ -233,7 +240,9 @@ nav {
         }
 
         .debate-author-img {
-          width: 10%;
+          width: 63px;
+          height: 63px;
+          z-index: 3;
         }
       }
     }
