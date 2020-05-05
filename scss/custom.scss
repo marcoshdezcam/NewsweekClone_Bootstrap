@@ -70,6 +70,7 @@ nav {
   #collapsibleCategoriesMenu {
     background-color: rgb(255, 255, 255);
     width: 100%;
+    position: relative;
 
     a {
       color: rgb(0, 0, 0);
@@ -90,8 +91,6 @@ nav {
       color: #333;
     }
 
-    position: relative;
-
     #navbar-red-polygon {
       width: 75px;
       height: 15px;
@@ -105,171 +104,184 @@ nav {
   }
 }
 
-#main-section {
+main {
+  .section-header {
+    color: rgba(3, 3, 3, 0.4);
+    font: bold 16px/16px 'Roboto-Heading', Fallback, sans-serif;
+    text-transform: uppercase;
+  }
+
   .card-border-light {
     border: rgb(255, 255, 255) !important;
   }
-}
 
-.section-header {
-  color: rgba(3, 3, 3, 0.4);
-  font: bold 16px/16px 'Roboto-Heading', Fallback, sans-serif;
-  text-transform: uppercase;
-}
+  #main-section {
+    #left-col {
+      #featured-stories {
+        .card-title {
+          font: bold 24px/24px 'Roboto-Heading', Fallback, sans-serif;
+        }
 
-#featured-stories {
-  .card-title {
-    font: bold 24px/24px 'Roboto-Heading', Fallback, sans-serif;
-  }
-
-  .card-text {
-    font: 15px/20px 'Helvetica-Neue', Fallback, sans-serif;
-  }
-}
-
-#top-story {
-  .card-img-top {
-    width: 100% !important;
-    height: 100% !important;
-  }
-
-  .card-title {
-    font: bold 22px/24px 'Roboto-Heading', Fallback, sans-serif;
-  }
-
-  .card-text {
-    font: 15px/20px 'Helvetica-Neue', Fallback, sans-serif;
-  }
-}
-
-#heroes-of-the-pandemic,
-#culture-and-travel {
-  .card-title {
-    font: 20px/22px 'Lora', serif;
-  }
-
-  .card-text {
-    color: rgba(39, 39, 39, 0.5);
-    font: 15px/20px 'Helvetica-Neue', sans-serif;
-  }
-}
-
-#opinion {
-  height: 385px;
-
-  #opinion-cards {
-    height: 90%;
-
-    .card-body {
-      padding: 0 0 0 15px;
-      width: 80%;
-    }
-
-    .card-title {
-      font: bold 16px/20px 'Roboto-Heading', Fallback, sans-serif;
-
-      a {
-        color: black;
-      }
-
-      a:hover {
-        color: #f72210;
-        text-decoration: none;
+        .card-text {
+          font: 15px/20px 'Helvetica-Neue', Fallback, sans-serif;
+        }
       }
     }
 
-    .opinion-author {
-      font: bold 14px/16px 'Roboto-Heading', Fallback, sans-serif;
-      color: #555;
-      text-transform: uppercase;
-    }
+    #middle-col-bigger {
+      max-height: 2100px !important;
+      overflow-y: hidden;
 
-    .card-img {
-      width: 63px;
-      height: 63px;
-      margin: auto;
+      #top-story {
+        .card-title {
+          font: bold 22px/24px 'Roboto-Heading', Fallback, sans-serif;
+        }
+
+        .card-text {
+          font: 15px/20px 'Helvetica-Neue', Fallback, sans-serif;
+        }
+      }
+
+      #heroes-of-the-pandemic,
+      #culture-and-travel {
+        .card-title {
+          font: 20px/22px 'Lora', serif;
+        }
+
+        .card-text {
+          color: rgba(39, 39, 39, 0.5);
+          font: 15px/20px 'Helvetica-Neue', sans-serif;
+        }
+      }
+
+      #more-stories {
+        .more-story {
+          .card-title {
+            font: 17px/20px 'Roboto-Heading', Fallback, sans-serif;
+          }
+
+          .card-text {
+            font: 15px/20px 'Helvetica-Neue', Fallback, sans-serif;
+          }
+
+          .card-img {
+            width: 95px;
+            height: 95px;
+          }
+        }
+      }
     }
   }
-}
 
-#more-stories {
-  .more-story {
-    .card-title {
-      font: 17px/20px 'Roboto-Heading', Fallback, sans-serif;
+  #right-col {
+    #opinion {
+      height: 385px;
+
+      #opinion-cards {
+        height: 90%;
+
+        .opinion-card {
+          .card-img {
+            width: 63px;
+            height: 63px;
+            margin: auto;
+          }
+
+          .card-body {
+            padding: 0 0 0 15px;
+            width: 80%;
+
+            .card-title {
+              font: bold 16px/20px 'Roboto-Heading', Fallback, sans-serif;
+
+              a {
+                color: black;
+              }
+
+              a:hover {
+                color: #f72210;
+                text-decoration: none;
+              }
+            }
+
+            .opinion-author {
+              font: bold 14px/16px 'Roboto-Heading', Fallback, sans-serif;
+              color: #555;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
     }
 
-    .card-text {
-      font: 15px/20px 'Helvetica-Neue', Fallback, sans-serif;
+    #the-debate {
+      .debate-container {
+        height: 90%;
+
+        #vs-icon {
+          font: normal 17px/20px 'Roboto-Heading', Fallback, sans-serif;
+          height: 40px;
+          width: 40px;
+          color: white;
+          background-color: black;
+          text-align: center;
+          padding: 10px 0;
+        }
+
+        article {
+          height: 45%;
+          border-width: 4px !important;
+
+          .debate-info {
+            font: bold 17px/21px 'Roboto-Heading', Fallback, sans-serif;
+            width: 75%;
+          }
+
+          .debate-author {
+            height: 50%;
+            width: 100%;
+
+            .author-lines {
+              width: 100%;
+              height: 5px;
+              top: 15px;
+              position: relative;
+              z-index: 2;
+              border-color: #d9d9d9;
+            }
+
+            .author-name {
+              font: bold 14px/21px 'Roboto-Heading', Fallback, sans-serif;
+              width: 90%;
+            }
+
+            .debate-author-img {
+              width: 63px;
+              height: 63px;
+              z-index: 3;
+            }
+          }
+        }
+      }
     }
 
-    .card-img {
-      width: 95px;
-      height: 95px;
-    }
-  }
-}
+    #latest-news {
+      .latest-news-img {
+        width: 95px;
+        height: 95px;
+      }
 
-#the-debate {
-  .debate-container {
-    height: 90%;
-
-    #vs-icon {
-      font: normal 17px/20px 'Roboto-Heading', Fallback, sans-serif;
-      height: 40px;
-      width: 40px;
-      color: white;
-      background-color: black;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    article {
-      height: 45%;
-      border-width: 4px !important;
-
-      .debate-info {
-        font: bold 17px/21px 'Roboto-Heading', Fallback, sans-serif;
+      h4 {
+        font: bold 15px/20px 'Roboto-Heading', Fallback, sans-serif;
         width: 75%;
       }
-
-      .debate-author {
-        height: 50%;
-        width: 100%;
-
-        .author-lines {
-          width: 100%;
-          height: 5px;
-          top: 15px;
-          position: relative;
-          z-index: 2;
-          border-color: #d9d9d9;
-        }
-
-        .author-name {
-          font: bold 14px/21px 'Roboto-Heading', Fallback, sans-serif;
-          width: 90%;
-        }
-
-        .debate-author-img {
-          width: 63px;
-          height: 63px;
-          z-index: 3;
-        }
-      }
     }
   }
 }
 
-#latest-news {
-  .latest-news-img {
-    width: 95px;
-    height: 95px;
-  }
-
-  h4 {
-    font: bold 15px/20px 'Roboto-Heading', Fallback, sans-serif;
-    width: 75%;
-  }
+.n-of-Magazine {
+  width: 28px;
+  height: 29px;
 }
 
 #in-the-magazine {
@@ -278,22 +290,23 @@ nav {
     text-transform: uppercase;
   }
 
-  #n-of-Magazine {
-    width: 28px;
-    height: 29px;
-  }
-
   h3 {
     font: 20px/20px 'Roboto-Heading', Fallback, sans-serif;
+    //color: $primary !important;
   }
 }
 
 #editors-pick {
-  .card-title {
+  h1 {
+    font: bold 19px/19px "Roboto-Heading", Fallback, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .pick-title {
     font: 24px/24px 'Roboto-Heading', Fallback, sans-serif;
   }
 
-  .card-text {
+  .pick-text {
     color: #333;
     font: 15px/20px 'Helvetica-Neue', Fallback, sans-serif;
   }
@@ -305,7 +318,7 @@ nav {
   }
 
   .main {
-    .card-title {
+    .main-article-title {
       font: bold 22px/22px 'Roboto-Heading', Fallback, sans-serif;
     }
   }

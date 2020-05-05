@@ -149,7 +149,7 @@
     </nav>
     <main class="container-xl px-3">
       <div class="row pt-4 d-flex justify-content-between" id="main-section">
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" id="left-col">
           <section class="" id="featured-stories">
             <h2 class="section-header">
               Featured Stories
@@ -597,11 +597,13 @@
             </article>
           </section>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" id="right-col">
           <section class="my-3" id="opinion">
             <h2 class="section-header">Opinion</h2>
-            <div class="" id="opinion-cards">
-              <article class="card-border-light border-bottom py-1 d-flex">
+            <div id="opinion-cards">
+              <article
+                class="opinion-card card-border-light border-bottom py-1 d-flex"
+              >
                 <img src="./img/opinion/1.png" class="card-img" alt="" />
                 <div class="card-body">
                   <h4 class="card-title">
@@ -613,7 +615,9 @@
                   <p class="opinion-author">By Bonnie Kristian</p>
                 </div>
               </article>
-              <article class="card-border-light border-bottom py-1 d-flex">
+              <article
+                class="opinion-card card-border-light border-bottom py-1 d-flex"
+              >
                 <img src="./img/opinion/2.png" class="card-img" alt="" />
                 <div class="card-body">
                   <h4 class="card-title">
@@ -625,7 +629,9 @@
                   </p>
                 </div>
               </article>
-              <article class="card-border-light border-bottom py-1 d-flex">
+              <article
+                class="opinion-card card-border-light border-bottom py-1 d-flex"
+              >
                 <img src="./img/opinion/3.png" class="card-img" alt="" />
                 <div class="card-body">
                   <h4 class="card-title">
@@ -637,7 +643,7 @@
                   </p>
                 </div>
               </article>
-              <article class="card-border-light py-1 d-flex">
+              <article class="opinion-card card-border-light py-1 d-flex">
                 <img src="./img/opinion/4.png" class="card-img" alt="" />
                 <div class="card-body">
                   <h4 class="card-title">
@@ -765,15 +771,14 @@
         </div>
       </div>
 
-      <section class="" id="in-the-magazine">
+      <section class="mt-4" id="in-the-magazine">
         <h1
           class="magazine-header mb-4 pb-3 border-bottom border-1 d-flex align-items-center justify-content-center"
         >
           <img
             src="./img/in-the-magazine/n.png"
             alt="N Logo"
-            class="mr-2"
-            id="n-of-Magazine"
+            class="mr-2 n-of-Magazine"
           />
           In the magazine
         </h1>
@@ -784,8 +789,8 @@
               alt=""
               class="card-img-top"
             />
-            <h3>May 01 Issue</h3>
-            <button>See all features</button>
+            <h3 class="bg-legend">May 01 Issue</h3>
+            <button class="btn btn-info">See all features</button>
           </article>
           <article class="card card-border-light col-md-4">
             <img
@@ -816,7 +821,7 @@
               Michigan Governor Gretchen Whitmer Talks Trump, VP Rumors And More
             </h3>
           </article>
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img
               src="./img/in-the-magazine/3.jpg"
               alt=""
@@ -832,7 +837,7 @@
             </h3>
           </article>
           <div class="w-100"></div>
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img
               src="./img/in-the-magazine/4.jpg"
               alt=""
@@ -847,7 +852,7 @@
               Pandemic
             </h3>
           </article>
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img
               src="./img/in-the-magazine/5.jpg"
               alt=""
@@ -862,7 +867,7 @@
               Documentary
             </h3>
           </article>
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img
               src="./img/in-the-magazine/6.jpg"
               alt=""
@@ -874,7 +879,7 @@
             </div>
             <h3>10 Books That Will Transport You All Around the World</h3>
           </article>
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img
               src="./img/in-the-magazine/7.jpg"
               alt=""
@@ -888,101 +893,110 @@
         </div>
       </section>
 
-      <section class="" id="editors-pick">
-        <h1 class="magazine-header">Editor's pick</h1>
+      <section class="mt-4" id="editors-pick">
+        <h1
+          class="magazine-header mb-4 pb-3 border-bottom border-1 d-flex align-items-center justify-content-center"
+        >
+          <img
+            src="./img/in-the-magazine/n.png"
+            alt="N Logo"
+            class="mr-2 n-of-Magazine"
+          />
+          Editor's pick
+        </h1>
         <div class="card-group row">
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img src="./img/editors-pick/1.jpg" alt="" class="card-img-top" />
             <span>Essays</span>
-            <h3 class="card-title">
+            <h3 class="pick-title card-title">
               'My Small Family Business Failed To Get PPP Money'
             </h3>
-            <p class="card-text">
+            <p class="pick-text card-text">
               At Bagels Etc, we needed about $40,000, a drop in a $349 billion
               pot.
             </p>
           </article>
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img src="./img/editors-pick/2.jpg" alt="" class="card-img-top" />
             <span>Tech & Science</span>
-            <h3 class="card-title">
+            <h3 class="pick-title card-title">
               Spike in Big Cat Poaching During Coronavirus Lockdown in Colombia
             </h3>
-            <p class="card-text">
+            <p class="pick-text card-text">
               With their neighbors inside, some hunters are spending quarantine
               targeting jaguars, pumas and ocelots," Esteban Payán from Panthera
               told Newsweek.
             </p>
           </article>
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img src="./img/editors-pick/3.jpg" alt="" class="card-img-top" />
             <span>U.S.</span>
-            <h3 class="card-title">
+            <h3 class="pick-title card-title">
               COVID-19 Could Claim 100,000 More Lives if Jail Populations Stay
               The Same
             </h3>
-            <p class="card-text">
+            <p class="pick-text card-text">
               "Every day that goes by without action means more people will
               die," the ACLU has warned.
             </p>
           </article>
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img src="./img/editors-pick/4.jpg" alt="" class="card-img-top" />
             <span>News</span>
-            <h3 class="card-title">
+            <h3 class="pick-title card-title">
               Afghan Refugee Gives Out Food Vouchers to Those Hit by Coronavirus
               Crisis
             </h3>
-            <p class="card-text">
+            <p class="pick-text card-text">
               Nebraska small business owner Nemat Azizi helps out-of-work
               restaurant and salon workers with free $150 grocery vouchers.
             </p>
           </article>
           <div class="w-100"></div>
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img src="./img/editors-pick/5.jpg" alt="" class="card-img-top" />
             <span>U.S.</span>
-            <h3 class="card-title">
+            <h3 class="pick-title card-title">
               China, a Large American Creditor, Won't Be Funding Your Stimulus
               Check
             </h3>
-            <p class="card-text">
+            <p class="pick-text card-text">
               The U.S. Treasury will issue trillions of dollars in new debt to
               fund the massive coronavirus stimulus program. Who will buy it?
             </p>
           </article>
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img src="./img/editors-pick/6.jpg" alt="" class="card-img-top" />
             <span>News</span>
-            <h3 class="card-title">
+            <h3 class="pick-title card-title">
               Prince Louis Birthday Photo Shows Rainbow of Hope Painted With
               Mother
             </h3>
-            <p class="card-text">
+            <p class="pick-text card-text">
               Prince Louis turns two today and mother Kate Middleton has
               released new images of him covered in paint, creating a rainbow
               picture as part of a trend aimed at spreading hope.
             </p>
           </article>
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img src="./img/editors-pick/7.jpg" alt="" class="card-img-top" />
             <span>U.S.</span>
-            <h3 class="card-title">
+            <h3 class="pick-title card-title">
               Texas Woman Donates Most of Stimulus Check After Seeing Lines at
               Food Bank
             </h3>
-            <p class="card-text">
+            <p class="pick-text card-text">
               Toi Cudworth donated $950 to the San Antonio Food Bank and also
               bought groceries for a neighbor who was recently laid off.
             </p>
           </article>
-          <article class="card col-md-4">
+          <article class="card card-border-light col-md-4">
             <img src="./img/editors-pick/8.jpg" alt="" class="card-img-top" />
             <span>Culture</span>
-            <h3 class="card-title">
+            <h3 class="pick-title card-title">
               World Book Day: Free Books and Events to Help Celebrate at Home
             </h3>
-            <p class="card-text">
+            <p class="pick-text card-text">
               Curl up with a coffee and dig into a good book.
             </p>
           </article>
@@ -1000,7 +1014,7 @@
                   alt=""
                   class="card-img-top"
                 />
-                <h3 class="card-title">
+                <h3 class="card-title main-article-title">
                   D.C. Mayor to Hire Hundreds For Coronavirus Contact Tracing
                   Force
                 </h3>
@@ -1009,7 +1023,7 @@
                 <img
                   src="./img/category-US/main-2.jpg"
                   alt=""
-                  class="card-img-top"
+                  class="card-img-top main-article-title"
                 />
                 <h3 class="card-title">
                   Tyson Foods Closes Third Plant This Week Over Coronavirus

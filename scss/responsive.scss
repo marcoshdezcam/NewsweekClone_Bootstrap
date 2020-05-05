@@ -13,6 +13,10 @@
       height: 30px;
     }
   }
+
+  #in-the-magazine {
+
+  }
 }
 
 @include media-breakpoint-up(md) {
@@ -23,13 +27,6 @@
       #top-subscribe {
         width: 126px;
       }
-    }
-  }
-
-  #top-story {
-    .card-img-top {
-      width: 394px;
-      height: 242px;
     }
   }
 }
