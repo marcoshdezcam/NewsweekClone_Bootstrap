@@ -81,7 +81,7 @@ nav {
       right: 0; }
 
 #main-section .card-border-light {
-  border: white; }
+  border: white !important; }
 
 .section-header {
   color: rgba(3, 3, 3, 0.4);
@@ -93,6 +93,10 @@ nav {
 
 #featured-stories .card-text {
   font: 15px/20px 'Helvetica-Neue', Fallback, sans-serif; }
+
+#top-story .card-img-top {
+  width: 100% !important;
+  height: 100% !important; }
 
 #top-story .card-title {
   font: bold 22px/24px 'Roboto-Heading', Fallback, sans-serif; }
@@ -114,7 +118,8 @@ nav {
   #opinion #opinion-cards {
     height: 90%; }
     #opinion #opinion-cards .card-body {
-      padding: 0 0 0 5px; }
+      padding: 0 0 0 15px;
+      width: 80%; }
     #opinion #opinion-cards .card-title {
       font: bold 16px/20px 'Roboto-Heading', Fallback, sans-serif; }
       #opinion #opinion-cards .card-title a {
@@ -129,7 +134,7 @@ nav {
     #opinion #opinion-cards .card-img {
       width: 63px;
       height: 63px;
-      margin: auto auto; }
+      margin: auto; }
 
 #more-stories .more-story .card-title {
   font: 17px/20px 'Roboto-Heading', Fallback, sans-serif; }
@@ -160,7 +165,7 @@ nav {
     #the-debate .debate-container article .debate-author {
       height: 50%;
       width: 100%; }
-      #the-debate .debate-container article .debate-author #author-lines {
+      #the-debate .debate-container article .debate-author .author-lines {
         width: 100%;
         height: 5px;
         top: 15px;
@@ -182,6 +187,14 @@ nav {
 #latest-news h4 {
   font: bold 15px/20px 'Roboto-Heading', Fallback, sans-serif;
   width: 75%; }
+
+#in-the-magazine h1 {
+  font: bold 19px/19px "Roboto-Heading", Fallback, sans-serif;
+  text-transform: uppercase; }
+
+#in-the-magazine #n-of-Magazine {
+  width: 28px;
+  height: 29px; }
 
 #in-the-magazine h3 {
   font: 20px/20px 'Roboto-Heading', Fallback, sans-serif; }
@@ -233,6 +246,7 @@ nav {
   --red-news: #ff0500;
   --pink-news: #f92859;
   --blue-news: #1c87fb;
+  --legend: rgba(255, 255, 255, 0.9);
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1650,6 +1664,23 @@ pre {
   .table-hover .table-blue-news:hover > th {
     background-color: #a6d0fe; }
 
+.table-legend,
+.table-legend > th,
+.table-legend > td {
+  background-color: rgba(255, 255, 255, 0.972); }
+
+.table-legend th,
+.table-legend td,
+.table-legend thead th,
+.table-legend tbody + tbody {
+  border-color: rgba(255, 255, 255, 0.948); }
+
+.table-hover .table-legend:hover {
+  background-color: rgba(242, 242, 242, 0.972); }
+  .table-hover .table-legend:hover > td,
+  .table-hover .table-legend:hover > th {
+    background-color: rgba(242, 242, 242, 0.972); }
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2395,6 +2426,32 @@ fieldset:disabled a.btn {
     .show > .btn-blue-news.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(62, 153, 252, 0.5); }
 
+.btn-legend {
+  color: #212529;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9); }
+  .btn-legend:hover {
+    color: #212529;
+    background-color: rgba(236, 236, 236, 0.9);
+    border-color: rgba(230, 230, 230, 0.9); }
+  .btn-legend:focus, .btn-legend.focus {
+    color: #212529;
+    background-color: rgba(236, 236, 236, 0.9);
+    border-color: rgba(230, 230, 230, 0.9);
+    box-shadow: 0 0 0 0.2rem rgba(216, 216, 217, 0.5); }
+  .btn-legend.disabled, .btn-legend:disabled {
+    color: #212529;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9); }
+  .btn-legend:not(:disabled):not(.disabled):active, .btn-legend:not(:disabled):not(.disabled).active,
+  .show > .btn-legend.dropdown-toggle {
+    color: #212529;
+    background-color: rgba(230, 230, 230, 0.9);
+    border-color: rgba(223, 223, 223, 0.9); }
+    .btn-legend:not(:disabled):not(.disabled):active:focus, .btn-legend:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-legend.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(216, 216, 217, 0.5); }
+
 .btn-outline-primary {
   color: #ff0500;
   border-color: #ff0500; }
@@ -2625,6 +2682,27 @@ fieldset:disabled a.btn {
     .btn-outline-blue-news:not(:disabled):not(.disabled):active:focus, .btn-outline-blue-news:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-blue-news.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(28, 135, 251, 0.5); }
+
+.btn-outline-legend {
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9); }
+  .btn-outline-legend:hover {
+    color: #212529;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9); }
+  .btn-outline-legend:focus, .btn-outline-legend.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
+  .btn-outline-legend.disabled, .btn-outline-legend:disabled {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: transparent; }
+  .btn-outline-legend:not(:disabled):not(.disabled):active, .btn-outline-legend:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-legend.dropdown-toggle {
+    color: #212529;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9); }
+    .btn-outline-legend:not(:disabled):not(.disabled):active:focus, .btn-outline-legend:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-legend.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -4170,6 +4248,16 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(28, 135, 251, 0.5); }
 
+.badge-legend {
+  color: #212529;
+  background-color: rgba(255, 255, 255, 0.9); }
+  a.badge-legend:hover, a.badge-legend:focus {
+    color: #212529;
+    background-color: rgba(230, 230, 230, 0.9); }
+  a.badge-legend:focus, a.badge-legend.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -4304,6 +4392,15 @@ input[type="button"].btn-block {
     border-top-color: #a6d0fe; }
   .alert-blue-news .alert-link {
     color: #0a2e55; }
+
+.alert-legend {
+  color: rgba(120, 120, 120, 0.948);
+  background-color: rgba(255, 255, 255, 0.98);
+  border-color: rgba(255, 255, 255, 0.972); }
+  .alert-legend hr {
+    border-top-color: rgba(242, 242, 242, 0.972); }
+  .alert-legend .alert-link {
+    color: rgba(95, 95, 95, 0.948); }
 
 @keyframes progress-bar-stripes {
   from {
@@ -4615,6 +4712,17 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #0f4683;
     border-color: #0f4683; }
+
+.list-group-item-legend {
+  color: rgba(120, 120, 120, 0.948);
+  background-color: rgba(255, 255, 255, 0.972); }
+  .list-group-item-legend.list-group-item-action:hover, .list-group-item-legend.list-group-item-action:focus {
+    color: rgba(120, 120, 120, 0.948);
+    background-color: rgba(242, 242, 242, 0.972); }
+  .list-group-item-legend.list-group-item-action.active {
+    color: #fff;
+    background-color: rgba(120, 120, 120, 0.948);
+    border-color: rgba(120, 120, 120, 0.948); }
 
 .close {
   float: right;
@@ -5323,6 +5431,14 @@ button.bg-blue-news:hover,
 button.bg-blue-news:focus {
   background-color: #046ee0 !important; }
 
+.bg-legend {
+  background-color: rgba(255, 255, 255, 0.9) !important; }
+
+a.bg-legend:hover, a.bg-legend:focus,
+button.bg-legend:hover,
+button.bg-legend:focus {
+  background-color: rgba(230, 230, 230, 0.9) !important; }
+
 .bg-white {
   background-color: #fff !important; }
 
@@ -5391,6 +5507,9 @@ button.bg-blue-news:focus {
 
 .border-blue-news {
   border-color: #1c87fb !important; }
+
+.border-legend {
+  border-color: rgba(255, 255, 255, 0.9) !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -7661,6 +7780,12 @@ a.text-pink-news:hover, a.text-pink-news:focus {
 a.text-blue-news:hover, a.text-blue-news:focus {
   color: #0461c7 !important; }
 
+.text-legend {
+  color: rgba(255, 255, 255, 0.9) !important; }
+
+a.text-legend:hover, a.text-legend:focus {
+  color: rgba(217, 217, 217, 0.9) !important; }
+
 .text-body {
   color: #212529 !important; }
 
@@ -7768,9 +7893,9 @@ a.text-blue-news:hover, a.text-blue-news:focus {
     font: 18px/18px 'Roboto-Heading', Fallback, sans-serif; }
     nav .btn #top-subscribe {
       width: 126px; }
-  #latest-news .latest-news-img {
-    width: 95px;
-    height: 95px; } }
+  #top-story .card-img-top {
+    width: 394px;
+    height: 242px; } }
 
 @media (min-width: 992px) {
   nav #newsweek_Logo {

@@ -107,7 +107,7 @@ nav {
 
 #main-section {
   .card-border-light {
-    border: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) !important;
   }
 }
 
@@ -128,6 +128,11 @@ nav {
 }
 
 #top-story {
+  .card-img-top {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
   .card-title {
     font: bold 22px/24px 'Roboto-Heading', Fallback, sans-serif;
   }
@@ -156,7 +161,8 @@ nav {
     height: 90%;
 
     .card-body {
-      padding: 0 0 0 5px;
+      padding: 0 0 0 15px;
+      width: 80%;
     }
 
     .card-title {
@@ -181,7 +187,7 @@ nav {
     .card-img {
       width: 63px;
       height: 63px;
-      margin: auto auto;
+      margin: auto;
     }
   }
 }
@@ -230,7 +236,7 @@ nav {
         height: 50%;
         width: 100%;
 
-        #author-lines {
+        .author-lines {
           width: 100%;
           height: 5px;
           top: 15px;
@@ -267,6 +273,16 @@ nav {
 }
 
 #in-the-magazine {
+  h1 {
+    font: bold 19px/19px "Roboto-Heading", Fallback, sans-serif;
+    text-transform: uppercase;
+  }
+
+  #n-of-Magazine {
+    width: 28px;
+    height: 29px;
+  }
+
   h3 {
     font: 20px/20px 'Roboto-Heading', Fallback, sans-serif;
   }
