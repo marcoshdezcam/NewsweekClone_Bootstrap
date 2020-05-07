@@ -1,16 +1,13 @@
 // IMPORTS
-@import '../scss/fonts';
 @import '../scss/variables';
 @import '../scss/mixins';
+@import '../scss/fonts';
+
+// BOOTSTRAP SASS IMPORT
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 // CUSTOM STYLE
-
-body {
-  background-color: #f4f5f6;
-}
-
 nav {
-  color: rgb(255, 255, 255);
   margin: 0 auto;
   max-width: 1310px;
 
@@ -69,7 +66,7 @@ nav {
 
   #collapsibleCategoriesMenu {
     background-color: rgb(255, 255, 255);
-    width: 100%;
+    //width: 100%;
     position: relative;
 
     a {
@@ -106,7 +103,7 @@ nav {
 
 main {
   .section-header {
-    color: rgba(3, 3, 3, 0.4);
+    //color: $gray-600;
     font: bold 16px/16px 'Roboto-Heading', Fallback, sans-serif;
     text-transform: uppercase;
   }
@@ -292,7 +289,6 @@ main {
 
   h3 {
     font: 20px/20px 'Roboto-Heading', Fallback, sans-serif;
-    //color: $primary !important;
   }
 }
 
@@ -324,14 +320,21 @@ main {
   }
 
   .others {
-    .card-title {
+    .card-img-left {
+      width: 95px !important;
+      height: 95px !important;
+      margin-right: 10px;
+    }
+
+    .other-title {
       font: bold 17px/21px 'Roboto-Heading', Fallback, sans-serif;
     }
   }
 }
 
-// BOOTSTRAP SASS IMPORT
-@import '../node_modules/bootstrap/scss/bootstrap';
+footer {
+  background-color: rgb(255, 255, 255);
+}
 
 // RESPONSIVE
 @import '../scss/responsive';

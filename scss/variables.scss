@@ -1,3 +1,8 @@
+//@import '../node_modules/bootstrap/scss/bootstrap';
+//@import '../node_modules/bootstrap/scss/variables';
+//@import '../node_modules/bootstrap/scss/functions';
+//@import '../node_modules/bootstrap/scss/mixins';
+
 // BOOTSTRAP  OVERRIDES
 $theme-colors: (
   "primary": #ff0500,
@@ -5,7 +10,10 @@ $theme-colors: (
   "red-news": #ff0500,
   "pink-news": #f92859,
   "blue-news": #1c87fb,
-  "legend": rgba(255, 255, 255, 0.9)
+  "whitest": #fff,
+  "blackest": #000,
+  "almost-white": #f4f5f6,
+  "legend": #ffffffe6
 );
 
 $container-max-widths: (

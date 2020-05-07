@@ -3,20 +3,22 @@
 @font-face {
   font-family: "Roboto-Heading";
   src: url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.eot");
-  src: url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.eot?#iefix")
-      format("embedded-opentype"),
+  src:
+    url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.eot?#iefix")
+    format("embedded-opentype"),
     url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.woff2") format("woff2"),
     url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.woff") format("woff"),
     url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.ttf") format("truetype"),
     url("../fonts/Roboto-Condensed/RobotoCondensed-Bold.svg#Roboto-Heading")
-      format("svg");
+    format("svg");
 }
 
 @font-face {
   font-family: "Lora";
   src: url("../fonts/Lora-Regular/Lora-Regular.eot");
-  src: url("../fonts/Lora-Regular/Lora-Regular.eot?#iefix")
-      format("embedded-opentype"),
+  src:
+    url("../fonts/Lora-Regular/Lora-Regular.eot?#iefix")
+    format("embedded-opentype"),
     url("../fonts/Lora-Regular/Lora-Regular.woff2") format("woff2"),
     url("../fonts/Lora-Regular/Lora-Regular.woff") format("woff"),
     url("../fonts/Lora-Regular/Lora-Regular.ttf") format("truetype"),
@@ -26,11 +28,12 @@
 @font-face {
   font-family: "Helvetica-Neue";
   src: url("../fonts/Helvetica-Neue/HelveticaNeueThin.eot");
-  src: url("../fonts/Helvetica-Neue/HelveticaNeueThin.eot?#iefix")
-      format("embedded-opentype"),
+  src:
+    url("../fonts/Helvetica-Neue/HelveticaNeueThin.eot?#iefix")
+    format("embedded-opentype"),
     url("../fonts/Helvetica-Neue/HelveticaNeueThin.woff2") format("woff2"),
     url("../fonts/Helvetica-Neue/HelveticaNeueThin.woff") format("woff"),
     url("../fonts/Helvetica-Neue/HelveticaNeueThin.ttf") format("truetype"),
     url("../fonts/Helvetica-Neue/HelveticaNeueThin.svg#Helvetica-Neue")
-      format("svg");
+    format("svg");
 }
