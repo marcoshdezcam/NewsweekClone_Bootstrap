@@ -32,7 +32,7 @@
 }
 
 @include media-breakpoint-up(lg) {
-  nav {
+  #nav--top {
     #newsweek_Logo {
       width: 395px;
       height: 60px;
@@ -40,6 +40,6 @@
   }
 }
 
-@include media-breakpoint-up(xl) {
+// @include media-breakpoint-up(xl) {
 
-}
+// }

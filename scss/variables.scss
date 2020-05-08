@@ -1,12 +1,11 @@
-//@import '../node_modules/bootstrap/scss/bootstrap';
-//@import '../node_modules/bootstrap/scss/variables';
-//@import '../node_modules/bootstrap/scss/functions';
-//@import '../node_modules/bootstrap/scss/mixins';
-
 // BOOTSTRAP  OVERRIDES
 $theme-colors: (
   "primary": #ff0500,
   "secondary": white,
+  // ADD CUSTOM COLORS
+  "gray-main": $gray-500,
+  "gray-body": $gray-600,
+  "gray-author": $gray-700,
   "red-news": #ff0500,
   "pink-news": #f92859,
   "blue-news": #1c87fb,
@@ -27,3 +26,6 @@ $grid-columns:      14;
 $grid-gutter-width: 20px;
 
 // CUSTOMS
+$font-Roboto: 'Roboto-Heading', Fallback, sans-serif;
+$font-Helvetica: 'Helvetica-Neue', Fallback, sans-serif;
+$font-Lora: 'Lora', Fallback, sans-serif;
