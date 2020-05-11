@@ -198,6 +198,14 @@
 #in-the-magazine h3 {
   font: 20px/20px "Roboto-Heading", Fallback, sans-serif; }
 
+#in-the-magazine .card-group .card .magazine-labels .bg-primary {
+  width: 80px;
+  height: 30px; }
+
+#in-the-magazine .card-group .card .magazine-labels .bg-whitest {
+  width: 80px;
+  height: 25px; }
+
 #editors-pick h1 {
   font: bold 19px/19px "Roboto-Heading", Fallback, sans-serif;
   text-transform: uppercase; }
