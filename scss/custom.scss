@@ -5,12 +5,12 @@
 
 // CUSTOM IMPORTS
 @import '../scss/fonts';
-@import '../scss/mixins';
 @import '../scss/variables';
+@import '../scss/mixins';
 @import '../scss/customOverrides';
 
 // RESPONSIVE
 @import '../scss/responsive';
 
-// IMPORT BOOTSTRAP TO APPLY CHANGES
+// IMPORT BOOTSTRAP
 @import '../node_modules/bootstrap/scss/bootstrap';

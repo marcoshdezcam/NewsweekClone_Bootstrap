@@ -6,7 +6,6 @@ $theme-colors: (
   "gray-main": $gray-500,
   "gray-body": $gray-600,
   "gray-author": $gray-700,
-  "red-news": #ff0500,
   "pink-news": #f92859,
   "blue-news": #1c87fb,
   "whitest": #fff,
@@ -29,3 +28,4 @@ $grid-gutter-width: 20px;
 $font-Roboto: 'Roboto-Heading', Fallback, sans-serif;
 $font-Helvetica: 'Helvetica-Neue', Fallback, sans-serif;
 $font-Lora: 'Lora', Fallback, sans-serif;
+$max-width-global: 1310px;

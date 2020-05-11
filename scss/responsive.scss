@@ -1,11 +1,11 @@
 @include media-breakpoint-down(sm) {
-  nav {
+  #nav--top {
     #top-sign-in {
       width: 50px;
     }
 
     #top-subscribe {
-      width: 75px;
+      width: 80px;
     }
 
     #menu-icon {
@@ -14,9 +14,19 @@
     }
   }
 
-  #in-the-magazine {
-
-  }
+  // #main-container {
+  //   #main-section {
+  //     #left-col {
+  //       #featured-stories {
+  //         article {
+  //           .article-img-label {
+  //             top: 202px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 @include media-breakpoint-up(md) {
