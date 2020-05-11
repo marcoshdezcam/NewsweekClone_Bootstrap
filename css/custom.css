@@ -206,15 +206,25 @@
   width: 80px;
   height: 25px; }
 
-#editors-pick h1 {
+#editors-pick #editors-picks-header {
   font: bold 19px/19px "Roboto-Heading", Fallback, sans-serif;
   text-transform: uppercase; }
 
-#editors-pick .pick-title {
-  font: 24px/24px "Roboto-Heading", Fallback, sans-serif; }
+#editors-pick #editors-picks-articles .card .category-label {
+  width: min-content;
+  white-space: nowrap;
+  height: 33px;
+  position: relative;
+  bottom: 33px;
+  font: normal 17px/22px "Roboto-Heading", Fallback, sans-serif; }
 
-#editors-pick .pick-text {
-  font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
+#editors-pick #editors-picks-articles .card .card-body {
+  position: relative;
+  bottom: 33px; }
+  #editors-pick #editors-picks-articles .card .card-body .pick-title {
+    font: 24px/24px "Roboto-Heading", Fallback, sans-serif; }
+  #editors-pick #editors-picks-articles .card .card-body .pick-text {
+    font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
 
 #categories .category-header {
   font: bold 16px/16px "Roboto-Heading", Fallback, sans-serif; }
@@ -286,7 +296,7 @@
   --whitest: #fff;
   --blackest: #000;
   --almost-white: #f4f5f6;
-  --legend: #ffffffe6;
+  --label: #ffffffe6;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1789,21 +1799,21 @@ pre {
   .table-hover .table-almost-white:hover > th {
     background-color: #efefef; }
 
-.table-legend,
-.table-legend > th,
-.table-legend > td {
+.table-label,
+.table-label > th,
+.table-label > td {
   background-color: rgba(255, 255, 255, 0.972549); }
 
-.table-legend th,
-.table-legend td,
-.table-legend thead th,
-.table-legend tbody + tbody {
+.table-label th,
+.table-label td,
+.table-label thead th,
+.table-label tbody + tbody {
   border-color: rgba(255, 255, 255, 0.94902); }
 
-.table-hover .table-legend:hover {
+.table-hover .table-label:hover {
   background-color: rgba(242, 242, 242, 0.972549); }
-  .table-hover .table-legend:hover > td,
-  .table-hover .table-legend:hover > th {
+  .table-hover .table-label:hover > td,
+  .table-hover .table-label:hover > th {
     background-color: rgba(242, 242, 242, 0.972549); }
 
 .table-active,
@@ -2681,30 +2691,30 @@ fieldset:disabled a.btn {
     .show > .btn-almost-white.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(212, 214, 215, 0.5); }
 
-.btn-legend {
+.btn-label {
   color: #212529;
   background-color: #ffffffe6;
   border-color: #ffffffe6; }
-  .btn-legend:hover {
+  .btn-label:hover {
     color: #212529;
     background-color: rgba(236, 236, 236, 0.901961);
     border-color: rgba(230, 230, 230, 0.901961); }
-  .btn-legend:focus, .btn-legend.focus {
+  .btn-label:focus, .btn-label.focus {
     color: #212529;
     background-color: rgba(236, 236, 236, 0.901961);
     border-color: rgba(230, 230, 230, 0.901961);
     box-shadow: 0 0 0 0.2rem rgba(216, 216, 217, 0.5); }
-  .btn-legend.disabled, .btn-legend:disabled {
+  .btn-label.disabled, .btn-label:disabled {
     color: #212529;
     background-color: #ffffffe6;
     border-color: #ffffffe6; }
-  .btn-legend:not(:disabled):not(.disabled):active, .btn-legend:not(:disabled):not(.disabled).active,
-  .show > .btn-legend.dropdown-toggle {
+  .btn-label:not(:disabled):not(.disabled):active, .btn-label:not(:disabled):not(.disabled).active,
+  .show > .btn-label.dropdown-toggle {
     color: #212529;
     background-color: rgba(230, 230, 230, 0.901961);
     border-color: rgba(223, 223, 223, 0.901961); }
-    .btn-legend:not(:disabled):not(.disabled):active:focus, .btn-legend:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-legend.dropdown-toggle:focus {
+    .btn-label:not(:disabled):not(.disabled):active:focus, .btn-label:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-label.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(216, 216, 217, 0.5); }
 
 .btn-outline-primary {
@@ -3043,25 +3053,25 @@ fieldset:disabled a.btn {
     .show > .btn-outline-almost-white.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(244, 245, 246, 0.5); }
 
-.btn-outline-legend {
+.btn-outline-label {
   color: #ffffffe6;
   border-color: #ffffffe6; }
-  .btn-outline-legend:hover {
+  .btn-outline-label:hover {
     color: #212529;
     background-color: #ffffffe6;
     border-color: #ffffffe6; }
-  .btn-outline-legend:focus, .btn-outline-legend.focus {
+  .btn-outline-label:focus, .btn-outline-label.focus {
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
-  .btn-outline-legend.disabled, .btn-outline-legend:disabled {
+  .btn-outline-label.disabled, .btn-outline-label:disabled {
     color: #ffffffe6;
     background-color: transparent; }
-  .btn-outline-legend:not(:disabled):not(.disabled):active, .btn-outline-legend:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-legend.dropdown-toggle {
+  .btn-outline-label:not(:disabled):not(.disabled):active, .btn-outline-label:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-label.dropdown-toggle {
     color: #212529;
     background-color: #ffffffe6;
     border-color: #ffffffe6; }
-    .btn-outline-legend:not(:disabled):not(.disabled):active:focus, .btn-outline-legend:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-legend.dropdown-toggle:focus {
+    .btn-outline-label:not(:disabled):not(.disabled):active:focus, .btn-outline-label:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-label.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
 
 .btn-link {
@@ -4658,13 +4668,13 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(244, 245, 246, 0.5); }
 
-.badge-legend {
+.badge-label {
   color: #212529;
   background-color: #ffffffe6; }
-  a.badge-legend:hover, a.badge-legend:focus {
+  a.badge-label:hover, a.badge-label:focus {
     color: #212529;
     background-color: rgba(230, 230, 230, 0.901961); }
-  a.badge-legend:focus, a.badge-legend.focus {
+  a.badge-label:focus, a.badge-label.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
 
@@ -4848,13 +4858,13 @@ input[type="button"].btn-block {
   .alert-almost-white .alert-link {
     color: #666666; }
 
-.alert-legend {
+.alert-label {
   color: rgba(120, 120, 120, 0.94902);
   background-color: rgba(255, 255, 255, 0.980392);
   border-color: rgba(255, 255, 255, 0.972549); }
-  .alert-legend hr {
+  .alert-label hr {
     border-top-color: rgba(242, 242, 242, 0.972549); }
-  .alert-legend .alert-link {
+  .alert-label .alert-link {
     color: rgba(95, 95, 95, 0.94902); }
 
 @keyframes progress-bar-stripes {
@@ -5223,13 +5233,13 @@ input[type="button"].btn-block {
     background-color: #7f7f80;
     border-color: #7f7f80; }
 
-.list-group-item-legend {
+.list-group-item-label {
   color: rgba(120, 120, 120, 0.94902);
   background-color: rgba(255, 255, 255, 0.972549); }
-  .list-group-item-legend.list-group-item-action:hover, .list-group-item-legend.list-group-item-action:focus {
+  .list-group-item-label.list-group-item-action:hover, .list-group-item-label.list-group-item-action:focus {
     color: rgba(120, 120, 120, 0.94902);
     background-color: rgba(242, 242, 242, 0.972549); }
-  .list-group-item-legend.list-group-item-action.active {
+  .list-group-item-label.list-group-item-action.active {
     color: #fff;
     background-color: rgba(120, 120, 120, 0.94902);
     border-color: rgba(120, 120, 120, 0.94902); }
@@ -5981,12 +5991,12 @@ button.bg-almost-white:hover,
 button.bg-almost-white:focus {
   background-color: #d8dcdf !important; }
 
-.bg-legend {
+.bg-label {
   background-color: #ffffffe6 !important; }
 
-a.bg-legend:hover, a.bg-legend:focus,
-button.bg-legend:hover,
-button.bg-legend:focus {
+a.bg-label:hover, a.bg-label:focus,
+button.bg-label:hover,
+button.bg-label:focus {
   background-color: rgba(230, 230, 230, 0.901961) !important; }
 
 .bg-white {
@@ -6073,7 +6083,7 @@ button.bg-legend:focus {
 .border-almost-white {
   border-color: #f4f5f6 !important; }
 
-.border-legend {
+.border-label {
   border-color: #ffffffe6 !important; }
 
 .border-white {
@@ -8387,10 +8397,10 @@ a.text-blackest:hover, a.text-blackest:focus {
 a.text-almost-white:hover, a.text-almost-white:focus {
   color: #cacfd4 !important; }
 
-.text-legend {
+.text-label {
   color: #ffffffe6 !important; }
 
-a.text-legend:hover, a.text-legend:focus {
+a.text-label:hover, a.text-label:focus {
   color: rgba(217, 217, 217, 0.901961) !important; }
 
 .text-body {

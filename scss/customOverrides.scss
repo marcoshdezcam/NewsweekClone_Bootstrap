@@ -122,18 +122,36 @@
 }
 
 #editors-pick {
-  h1 {
+  #editors-picks-header {
     font: bold 19px/19px $font-Roboto;
 
     @include textUpper;
   }
 
-  .pick-title {
-    font: 24px/24px $font-Roboto;
-  }
+  #editors-picks-articles {
+    .card {
+      .category-label {
+        width: min-content;
+        white-space: nowrap;
+        height: 33px;
+        position: relative;
+        bottom: 33px;
+        font: normal 17px/22px $font-Roboto;
+      }
 
-  .pick-text {
-    font: 15px/20px $font-Helvetica;
+      .card-body {
+        position: relative;
+        bottom: 33px;
+
+        .pick-title {
+          font: 24px/24px $font-Roboto;
+        }
+
+        .pick-text {
+          font: 15px/20px $font-Helvetica;
+        }
+      }
+    }
   }
 }
 
