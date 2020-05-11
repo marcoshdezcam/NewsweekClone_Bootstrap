@@ -75,11 +75,11 @@
   font: bold 16px/16px "Roboto-Heading", Fallback, sans-serif;
   text-transform: uppercase; }
 
-#main-container #main-section #left-col #featured-stories article .card--img {
+#main-container .card .card--img {
   position: relative;
   width: 100%;
   height: 100%; }
-  #main-container #main-section #left-col #featured-stories article .card--img .article-img-label {
+  #main-container .card .card--img .article-img-label {
     position: absolute;
     width: 70px;
     height: 33px;
@@ -95,7 +95,6 @@
   font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
 
 #main-container #main-section #middle-col-bigger {
-  max-height: 2100px !important;
   overflow-y: scroll;
   scrollbar-width: none;
   /* FirefoxS */
@@ -108,6 +107,12 @@
     font: bold 22px/24px "Roboto-Heading", Fallback, sans-serif; }
   #main-container #main-section #middle-col-bigger #top-story .card-text {
     font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
+  #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-img-overlay,
+  #main-container #main-section #middle-col-bigger #culture-and-travel .card-img-overlay {
+    background-color: #c2d4d7;
+    width: 100px;
+    height: 20px;
+    font: 300 13px/20px "Helvetica-Neue", Fallback, sans-serif; }
   #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-title,
   #main-container #main-section #middle-col-bigger #culture-and-travel .card-title {
     font: 20px/22px "Lora", Fallback, sans-serif; }

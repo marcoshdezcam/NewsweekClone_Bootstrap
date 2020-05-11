@@ -45,24 +45,6 @@
 @mixin columnLeft {
   #left-col {
     #featured-stories {
-      article {
-        .card--img {
-          position: relative;
-          width: 100%;
-          height: 100%;
-
-          .article-img-label {
-            position: absolute;
-            width: 70px;
-            height: 33px;
-            background-color: rgba(255, 255, 255, 0.9);
-            font: bold 17px/20px $font-Roboto;
-            bottom: 0;
-            left: 0;
-          }
-        }
-      }
-
       .card-title {
         font: bold 24px/24px $font-Roboto;
       }
@@ -76,7 +58,7 @@
 
 @mixin hideScrollBar {
   // Hide scrollbar on the middle column & Keep functionality
-  max-height: 2100px !important;
+  //max-height: 2100px !important;
   overflow-y: scroll;
   scrollbar-width: none; /* FirefoxS */
   -ms-overflow-style: none;  /* IE 10+ */
@@ -101,6 +83,16 @@
 
     #heroes-of-the-pandemic,
     #culture-and-travel {
+      .card-img-overlay {
+        background-color: #c2d4d7;
+        width: 100px;
+        height: 20px;
+        // position: relative;
+        // bottom: 0;
+        // left: 0;
+        font: 300 13px/20px $font-Helvetica;
+      }
+
       .card-title {
         font: 20px/22px $font-Lora;
       }
