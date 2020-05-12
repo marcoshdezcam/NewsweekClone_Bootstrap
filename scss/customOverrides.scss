@@ -185,3 +185,24 @@
     }
   }
 }
+
+#footer-ads {
+  .ad-header {
+    font: bold 16px/16px $font-Roboto;
+    text-transform: uppercase;
+  }
+
+  .ad-title {
+    font: bold 24px/28px $font-Roboto;
+  }
+
+  .ad-content {
+    font: normal 15px/21px $font-Helvetica;
+  }
+
+  #cover-front {
+    position: relative;
+    top: 15px;
+    left: -120px;
+  }
+}

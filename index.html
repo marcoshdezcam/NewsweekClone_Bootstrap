@@ -836,6 +836,7 @@
             </div>
           </section>
           <section id="sponsored-insights">
+            <h2 class="d-none">Sponsored insights</h2>
             <article class="card border-whitest">
               <img
                 class="card-img-top"
@@ -865,7 +866,7 @@
               id="subscribe-newsletter-ad"
             >
               <div class="d-flex justify-content-center align-content-center">
-                <img src="./img/n.png" />
+                <img src="./img/n.png" alt="n of Newsweek" />
                 Sign up for our newsletter
               </div>
               <button>
@@ -1018,11 +1019,12 @@
               alt=""
               class="card-img-top"
             />
-            <span
+            <h3
               class="bg-whitest text-primary text-center p-2"
               id="cover-month"
-              >May 01 Issue</span
             >
+              May 01 Issue
+            </h3>
             <button class="btn bg-whitest" id="btn-features">
               See all features
             </button>
@@ -1701,32 +1703,93 @@
     </main>
     <footer class="container-xl py-4 border-top border-1 bg-whitest">
       <section class="row" id="footer-ads">
-        <div class="col-14 col-lg-10 bg-almost-white" id="subscribe-ad">
+        <div class="col-14 col-lg-10" id="subscribe-ad">
           <h4 class="ad-header text-primary">Subscribe</h4>
-          <div class="">
-            <div class="" id="covers">
-              <img src="./img/ads/subscribe-back.jpg" alt="" />
-              <img src="./img/ads/subscribe-front.jpg" alt="" />
+          <div class="bg-almost-white d-flex p-4">
+            <div class="d-flex" id="covers">
+              <img
+                src="./img/ads/subscribe-back.jpg"
+                alt=""
+                class=""
+                id="cover-back"
+              />
+              <img
+                src="./img/ads/subscribe-front.jpg"
+                alt=""
+                class=""
+                id="cover-front"
+              />
             </div>
             <div class="" id="subscribe-ad-content">
-              <h4>
+              <h4 class="ad-title">
                 In-depth Stories You Don't See Elsewhere About Topics You Want
                 to Read!
               </h4>
-              <p>
+              <p class="ad-content">
                 All Access + Weekly Delivery. Choose A Membership That's Perfect
                 for You!
               </p>
-              <button>SUBSCRIBE ></button>
+              <button class="bg-primary text-whitest">SUBSCRIBE ></button>
             </div>
           </div>
         </div>
         <div class="col-14 col-lg-4" id="newsletter-ad">
-          <h4 class="ad-header">Newsletter</h4>
+          <h4 class="ad-header text-primary">Newsletter</h4>
+          <div class="">
+            <img src="./img/ads/subscribe-back.jpg" alt="Subscribe ad image" />
+            <div class="">
+              <h4 class="ad-title">
+                The Starting 5
+              </h4>
+              <p class="ad-content">
+                See why nearly a quarter of a million subscribers begin their
+                day with the Starting 5.
+              </p>
+              <form class="d-flex flex-column" id="free-signup">
+                <input class="" type="text" placeholder="Email adress" />
+                <button class="bg-primary text-whitest">Free sign up ></button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="" id="social-links"></section>
-      <section class="" id="other-links"></section>
+      <section class="" id="social-links">
+        <img src="./img/Newsweek_Logo.png" alt="" />
+        <p>
+          © 2020 Newsweek
+        </p>
+
+        <a href="#"><img src="./img/" alt="" />Facebook</a>
+        <a href="#"><img src="./img/" alt="" />Twitter</a>
+        <a href="#"><img src="./img/" alt="" />Instagram</a>
+        <a href="#"><img src="./img/" alt="" />Tumblr</a>
+        <a href="#"><img src="./img/" alt="" />Linkedin</a>
+      </section>
+      <section class="" id="other-links">
+        <div>
+          <h5>Editions:</h5>
+          <a href="#">U.S. Edition</a>
+          <a href="#">日本</a>
+          <a href="#">Pakistan</a>
+          <a href="#">Polska</a>
+          <a href="#">România</a>
+        </div>
+        <div>
+          <a href="#">About Us</a>
+          <a href="#">Corrections</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Editorial Guidelines</a>
+          <a href="#">Advertise</a>
+          <a href="#">Copyright</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Terms of Sale</a>
+          <a href="#">Archive</a>
+          <a href="#">Announcements</a>
+          <a href="#">Consent preferences</a>
+        </div>
+      </section>
     </footer>
 
     <script src="./js/jquery.slim.min.js"></script>

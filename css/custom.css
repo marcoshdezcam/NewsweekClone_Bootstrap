@@ -270,6 +270,21 @@
 #categories .others .other-title {
   font: bold 17px/21px "Roboto-Heading", Fallback, sans-serif; }
 
+#footer-ads .ad-header {
+  font: bold 16px/16px "Roboto-Heading", Fallback, sans-serif;
+  text-transform: uppercase; }
+
+#footer-ads .ad-title {
+  font: bold 24px/28px "Roboto-Heading", Fallback, sans-serif; }
+
+#footer-ads .ad-content {
+  font: normal 15px/21px "Helvetica-Neue", Fallback, sans-serif; }
+
+#footer-ads #cover-front {
+  position: relative;
+  top: 15px;
+  left: -120px; }
+
 @media (max-width: 767.98px) {
   #nav--top #top-sign-in {
     width: 50px; }
