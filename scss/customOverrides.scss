@@ -29,8 +29,7 @@
     width: 130px;
     border-radius: 0;
     font: 14px/14px $font-Roboto;
-
-    @include textUpper;
+    text-transform: uppercase;
   }
 
   #top-sign-in {
@@ -59,8 +58,7 @@
 #main-container {
   .section-header {
     font: bold 16px/16px $font-Roboto;
-
-    @include textUpper;
+    text-transform: uppercase;
   }
 
   .card {
@@ -94,29 +92,22 @@
 }
 
 #in-the-magazine {
-  h1 {
+  #magazine-header {
     font: bold 19px/19px $font-Roboto;
-
-    @include textUpper;
+    text-transform: uppercase;
   }
 
-  h3 {
+  .card-title {
     font: 20px/20px $font-Roboto;
   }
 
-  .card-group {
-    .card {
-      .magazine-labels {
-        .bg-primary {
-          width: 80px;
-          height: 30px;
-        }
-
-        .bg-whitest {
-          width: 80px;
-          height: 25px;
-        }
-      }
+  .magazine-labels {
+    .category-label {
+      font: bold 16px/20px $font-Roboto;
+      display: inline-block;
+      width: min-content;
+      white-space: nowrap;
+      height: 30px;
     }
   }
 }
@@ -124,32 +115,29 @@
 #editors-pick {
   #editors-picks-header {
     font: bold 19px/19px $font-Roboto;
-
-    @include textUpper;
+    text-transform: uppercase;
   }
 
   #editors-picks-articles {
-    .card {
-      .category-label {
-        width: min-content;
-        white-space: nowrap;
-        height: 33px;
-        position: relative;
-        bottom: 33px;
-        font: normal 17px/22px $font-Roboto;
+    .category-label {
+      width: min-content;
+      white-space: nowrap;
+      height: 33px;
+      position: relative;
+      bottom: 33px;
+      font: normal 17px/22px $font-Roboto;
+    }
+
+    .card-body {
+      position: relative;
+      bottom: 33px;
+
+      .pick-title {
+        font: 24px/24px $font-Roboto;
       }
 
-      .card-body {
-        position: relative;
-        bottom: 33px;
-
-        .pick-title {
-          font: 24px/24px $font-Roboto;
-        }
-
-        .pick-text {
-          font: 15px/20px $font-Helvetica;
-        }
+      .pick-text {
+        font: 15px/20px $font-Helvetica;
       }
     }
   }

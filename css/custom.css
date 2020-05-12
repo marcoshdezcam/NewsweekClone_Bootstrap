@@ -191,26 +191,25 @@
   width: 28px;
   height: 29px; }
 
-#in-the-magazine h1 {
+#in-the-magazine #magazine-header {
   font: bold 19px/19px "Roboto-Heading", Fallback, sans-serif;
   text-transform: uppercase; }
 
-#in-the-magazine h3 {
+#in-the-magazine .card-title {
   font: 20px/20px "Roboto-Heading", Fallback, sans-serif; }
 
-#in-the-magazine .card-group .card .magazine-labels .bg-primary {
-  width: 80px;
+#in-the-magazine .magazine-labels .category-label {
+  font: bold 16px/20px "Roboto-Heading", Fallback, sans-serif;
+  display: inline-block;
+  width: min-content;
+  white-space: nowrap;
   height: 30px; }
-
-#in-the-magazine .card-group .card .magazine-labels .bg-whitest {
-  width: 80px;
-  height: 25px; }
 
 #editors-pick #editors-picks-header {
   font: bold 19px/19px "Roboto-Heading", Fallback, sans-serif;
   text-transform: uppercase; }
 
-#editors-pick #editors-picks-articles .card .category-label {
+#editors-pick #editors-picks-articles .category-label {
   width: min-content;
   white-space: nowrap;
   height: 33px;
@@ -218,12 +217,12 @@
   bottom: 33px;
   font: normal 17px/22px "Roboto-Heading", Fallback, sans-serif; }
 
-#editors-pick #editors-picks-articles .card .card-body {
+#editors-pick #editors-picks-articles .card-body {
   position: relative;
   bottom: 33px; }
-  #editors-pick #editors-picks-articles .card .card-body .pick-title {
+  #editors-pick #editors-picks-articles .card-body .pick-title {
     font: 24px/24px "Roboto-Heading", Fallback, sans-serif; }
-  #editors-pick #editors-picks-articles .card .card-body .pick-text {
+  #editors-pick #editors-picks-articles .card-body .pick-text {
     font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
 
 #categories .category-header {
