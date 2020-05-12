@@ -214,5 +214,24 @@
         width: 75%;
       }
     }
+
+    #sponsored-insights {
+      .article-img-label {
+        width: min-content;
+        white-space: nowrap;
+        height: 33px;
+        position: relative;
+        bottom: 33px;
+        font: normal 17px/22px $font-Roboto;
+      }
+
+      .insight-title {
+        font: bold 24px/24px $font-Roboto;
+      }
+
+      .insight-summary {
+        font: normal 15px/20px $font-Helvetica;
+      }
+    }
   }
 }

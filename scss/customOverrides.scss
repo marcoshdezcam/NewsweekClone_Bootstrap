@@ -97,6 +97,25 @@
     text-transform: uppercase;
   }
 
+  #cover-month {
+    width: min-content;
+    white-space: nowrap;
+    height: 33px;
+    position: relative;
+    bottom: 33px;
+    font: normal 17px/22px $font-Roboto;
+    text-transform: uppercase;
+  }
+
+  #btn-features {
+    width: 100%;
+    height: 38px;
+    font: normal 18px/18px $font-Roboto;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 33px;
+  }
+
   .card-title {
     font: 20px/20px $font-Roboto;
   }

@@ -187,6 +187,20 @@
   font: bold 15px/20px "Roboto-Heading", Fallback, sans-serif;
   width: 75%; }
 
+#main-container #main-section #right-col #sponsored-insights .article-img-label {
+  width: min-content;
+  white-space: nowrap;
+  height: 33px;
+  position: relative;
+  bottom: 33px;
+  font: normal 17px/22px "Roboto-Heading", Fallback, sans-serif; }
+
+#main-container #main-section #right-col #sponsored-insights .insight-title {
+  font: bold 24px/24px "Roboto-Heading", Fallback, sans-serif; }
+
+#main-container #main-section #right-col #sponsored-insights .insight-summary {
+  font: normal 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
+
 .n-of-Magazine {
   width: 28px;
   height: 29px; }
@@ -194,6 +208,23 @@
 #in-the-magazine #magazine-header {
   font: bold 19px/19px "Roboto-Heading", Fallback, sans-serif;
   text-transform: uppercase; }
+
+#in-the-magazine #cover-month {
+  width: min-content;
+  white-space: nowrap;
+  height: 33px;
+  position: relative;
+  bottom: 33px;
+  font: normal 17px/22px "Roboto-Heading", Fallback, sans-serif;
+  text-transform: uppercase; }
+
+#in-the-magazine #btn-features {
+  width: 100%;
+  height: 38px;
+  font: normal 18px/18px "Roboto-Heading", Fallback, sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 33px; }
 
 #in-the-magazine .card-title {
   font: 20px/20px "Roboto-Heading", Fallback, sans-serif; }
