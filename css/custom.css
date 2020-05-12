@@ -95,7 +95,14 @@
 #main-container #main-section #left-col #featured-stories .card-text {
   font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
 
+#main-container #main-section #left-col #sponsored-insights-left .insight-title {
+  font: bold 24px/24px "Roboto-Heading", Fallback, sans-serif; }
+
+#main-container #main-section #left-col #sponsored-insights-left .insight-summary {
+  font: normal 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
+
 #main-container #main-section #middle-col-bigger {
+  max-height: 3100px !important;
   overflow-y: scroll;
   scrollbar-width: none;
   /* FirefoxS */
@@ -113,10 +120,13 @@
     background-color: #c2d4d7;
     width: 100px;
     height: 20px;
+    position: relative;
+    top: -20px;
     font: 300 13px/20px "Helvetica-Neue", Fallback, sans-serif; }
   #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-body,
   #main-container #main-section #middle-col-bigger #culture-and-travel .card-body {
-    bottom: 0; }
+    position: relative;
+    top: -20px; }
     #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-body .card-title,
     #main-container #main-section #middle-col-bigger #culture-and-travel .card-body .card-title {
       font: 20px/22px "Lora", Fallback, sans-serif; }
@@ -193,18 +203,10 @@
   font: bold 15px/20px "Roboto-Heading", Fallback, sans-serif;
   width: 75%; }
 
-#main-container #main-section #right-col #sponsored-insights .article-img-label {
-  width: min-content;
-  white-space: nowrap;
-  height: 33px;
-  position: relative;
-  bottom: 33px;
-  font: normal 17px/22px "Roboto-Heading", Fallback, sans-serif; }
-
-#main-container #main-section #right-col #sponsored-insights .insight-title {
+#main-container #main-section #right-col #sponsored-insights-right .insight-title {
   font: bold 24px/24px "Roboto-Heading", Fallback, sans-serif; }
 
-#main-container #main-section #right-col #sponsored-insights .insight-summary {
+#main-container #main-section #right-col #sponsored-insights-right .insight-summary {
   font: normal 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
 
 .n-of-Magazine {

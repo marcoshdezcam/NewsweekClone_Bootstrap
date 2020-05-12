@@ -49,12 +49,22 @@
         font: 15px/20px $font-Helvetica;
       }
     }
+
+    #sponsored-insights-left {
+      .insight-title {
+        font: bold 24px/24px $font-Roboto;
+      }
+
+      .insight-summary {
+        font: normal 15px/20px $font-Helvetica;
+      }
+    }
   }
 }
 
 @mixin hideScrollBar {
   // Hide scrollbar on the middle column & Keep functionality
-  //max-height: 4000px !important;
+  max-height: 3100px !important;
   overflow-y: scroll;
   scrollbar-width: none; /* FirefoxS */
   -ms-overflow-style: none;  /* IE 10+ */
@@ -83,14 +93,14 @@
         background-color: #c2d4d7;
         width: 100px;
         height: 20px;
-        // position: relative;
-        // bottom: 0;
-        // left: 0;
+        position: relative;
+        top: -20px;
         font: 300 13px/20px $font-Helvetica;
       }
 
       .card-body {
-        bottom: 0;
+        position: relative;
+        top: -20px;
 
         .card-title {
           font: 20px/22px $font-Lora;
@@ -223,16 +233,7 @@
       }
     }
 
-    #sponsored-insights {
-      .article-img-label {
-        width: min-content;
-        white-space: nowrap;
-        height: 33px;
-        position: relative;
-        bottom: 33px;
-        font: normal 17px/22px $font-Roboto;
-      }
-
+    #sponsored-insights-right {
       .insight-title {
         font: bold 24px/24px $font-Roboto;
       }
