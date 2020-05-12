@@ -75,18 +75,19 @@
   font: bold 16px/16px "Roboto-Heading", Fallback, sans-serif;
   text-transform: uppercase; }
 
-#main-container .card .card--img {
+#main-container .card .article-img-label {
   position: relative;
-  width: 100%;
-  height: 100%; }
-  #main-container .card .card--img .article-img-label {
-    position: absolute;
-    width: 70px;
-    height: 33px;
-    background-color: rgba(255, 255, 255, 0.9);
-    font: bold 17px/20px "Roboto-Heading", Fallback, sans-serif;
-    bottom: 0;
-    left: 0; }
+  width: min-content;
+  white-space: nowrap;
+  height: 33px;
+  background-color: rgba(255, 255, 255, 0.9);
+  font: bold 17px/20px "Roboto-Heading", Fallback, sans-serif;
+  top: -33px;
+  left: 0; }
+
+#main-container .card .card-body {
+  position: relative;
+  bottom: 33px; }
 
 #main-container #main-section #left-col #featured-stories .card-title {
   font: bold 24px/24px "Roboto-Heading", Fallback, sans-serif; }
@@ -113,19 +114,24 @@
     width: 100px;
     height: 20px;
     font: 300 13px/20px "Helvetica-Neue", Fallback, sans-serif; }
-  #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-title,
-  #main-container #main-section #middle-col-bigger #culture-and-travel .card-title {
-    font: 20px/22px "Lora", Fallback, sans-serif; }
-  #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-text,
-  #main-container #main-section #middle-col-bigger #culture-and-travel .card-text {
-    font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
+  #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-body,
+  #main-container #main-section #middle-col-bigger #culture-and-travel .card-body {
+    bottom: 0; }
+    #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-body .card-title,
+    #main-container #main-section #middle-col-bigger #culture-and-travel .card-body .card-title {
+      font: 20px/22px "Lora", Fallback, sans-serif; }
+    #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-body .card-text,
+    #main-container #main-section #middle-col-bigger #culture-and-travel .card-body .card-text {
+      font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
   #main-container #main-section #middle-col-bigger #more-stories .more-story {
     font: 17px/20px "Roboto-Heading", Fallback, sans-serif; }
-  #main-container #main-section #middle-col-bigger #more-stories .card-text {
-    font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
-  #main-container #main-section #middle-col-bigger #more-stories .card-img {
-    width: 95px;
-    height: 95px; }
+    #main-container #main-section #middle-col-bigger #more-stories .more-story .card-body {
+      bottom: 0; }
+      #main-container #main-section #middle-col-bigger #more-stories .more-story .card-body .card-text {
+        font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
+      #main-container #main-section #middle-col-bigger #more-stories .more-story .card-body .card-img {
+        width: 95px;
+        height: 95px; }
 
 #main-container #main-section #right-col #opinion {
   height: 385px; }

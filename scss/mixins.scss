@@ -54,7 +54,7 @@
 
 @mixin hideScrollBar {
   // Hide scrollbar on the middle column & Keep functionality
-  //max-height: 2100px !important;
+  //max-height: 4000px !important;
   overflow-y: scroll;
   scrollbar-width: none; /* FirefoxS */
   -ms-overflow-style: none;  /* IE 10+ */
@@ -89,27 +89,35 @@
         font: 300 13px/20px $font-Helvetica;
       }
 
-      .card-title {
-        font: 20px/22px $font-Lora;
-      }
+      .card-body {
+        bottom: 0;
 
-      .card-text {
-        font: 15px/20px $font-Helvetica;
+        .card-title {
+          font: 20px/22px $font-Lora;
+        }
+
+        .card-text {
+          font: 15px/20px $font-Helvetica;
+        }
       }
     }
 
     #more-stories {
       .more-story {
         font: 17px/20px $font-Roboto;
-      }
 
-      .card-text {
-        font: 15px/20px $font-Helvetica;
-      }
+        .card-body {
+          bottom: 0;
 
-      .card-img {
-        width: 95px;
-        height: 95px;
+          .card-text {
+            font: 15px/20px $font-Helvetica;
+          }
+
+          .card-img {
+            width: 95px;
+            height: 95px;
+          }
+        }
       }
     }
   }
