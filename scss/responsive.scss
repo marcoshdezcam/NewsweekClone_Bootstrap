@@ -39,6 +39,12 @@
       }
     }
   }
+
+  // #more-stories {
+  //   article {
+  //     border-bottom: black solid 3px !important;
+  //   }
+  // }
 }
 
 @include media-breakpoint-up(lg) {
@@ -50,6 +56,10 @@
   }
 }
 
-// @include media-breakpoint-up(xl) {
-
-// }
+@include media-breakpoint-up(xl) {
+  #more-story {
+    .card-body {
+      border-bottom: none !important;
+    }
+  }
+}

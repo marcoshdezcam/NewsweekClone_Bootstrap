@@ -13,6 +13,145 @@
   src: url("../fonts/Helvetica-Neue/HelveticaNeueThin.eot");
   src: url("../fonts/Helvetica-Neue/HelveticaNeueThin.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica-Neue/HelveticaNeueThin.woff2") format("woff2"), url("../fonts/Helvetica-Neue/HelveticaNeueThin.woff") format("woff"), url("../fonts/Helvetica-Neue/HelveticaNeueThin.ttf") format("truetype"), url("../fonts/Helvetica-Neue/HelveticaNeueThin.svg#Helvetica-Neue") format("svg"); }
 
+.border-top {
+  border-top: 1px solid #dee2e6; }
+
+.border-right {
+  border-right: 1px solid #dee2e6; }
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6; }
+
+.border-left {
+  border-left: 1px solid #dee2e6; }
+
+.border-top-0 {
+  border-top: 0; }
+
+.border-right-0 {
+  border-right: 0; }
+
+.border-bottom-0 {
+  border-bottom: 0; }
+
+.border-left-0 {
+  border-left: 0; }
+
+.border-x {
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6; }
+
+.border-y {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+
+.border {
+  border: 1px solid #dee2e6; }
+
+@media (min-width: 576px) {
+  .border-sm-top {
+    border-top: 1px solid #dee2e6; }
+  .border-sm-right {
+    border-right: 1px solid #dee2e6; }
+  .border-sm-bottom {
+    border-bottom: 1px solid #dee2e6; }
+  .border-sm-left {
+    border-left: 1px solid #dee2e6; }
+  .border-sm-top-0 {
+    border-top: 0; }
+  .border-sm-right-0 {
+    border-right: 0; }
+  .border-sm-bottom-0 {
+    border-bottom: 0; }
+  .border-sm-left-0 {
+    border-left: 0; }
+  .border-sm-x {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6; }
+  .border-sm-y {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6; }
+  .border-sm {
+    border: 1px solid #dee2e6; } }
+
+@media (min-width: 768px) {
+  .border-md-top {
+    border-top: 1px solid #dee2e6; }
+  .border-md-right {
+    border-right: 1px solid #dee2e6; }
+  .border-md-bottom {
+    border-bottom: 1px solid #dee2e6; }
+  .border-md-left {
+    border-left: 1px solid #dee2e6; }
+  .border-md-top-0 {
+    border-top: 0; }
+  .border-md-right-0 {
+    border-right: 0; }
+  .border-md-bottom-0 {
+    border-bottom: 0; }
+  .border-md-left-0 {
+    border-left: 0; }
+  .border-md-x {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6; }
+  .border-md-y {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6; }
+  .border-md {
+    border: 1px solid #dee2e6; } }
+
+@media (min-width: 992px) {
+  .border-lg-top {
+    border-top: 1px solid #dee2e6; }
+  .border-lg-right {
+    border-right: 1px solid #dee2e6; }
+  .border-lg-bottom {
+    border-bottom: 1px solid #dee2e6; }
+  .border-lg-left {
+    border-left: 1px solid #dee2e6; }
+  .border-lg-top-0 {
+    border-top: 0; }
+  .border-lg-right-0 {
+    border-right: 0; }
+  .border-lg-bottom-0 {
+    border-bottom: 0; }
+  .border-lg-left-0 {
+    border-left: 0; }
+  .border-lg-x {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6; }
+  .border-lg-y {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6; }
+  .border-lg {
+    border: 1px solid #dee2e6; } }
+
+@media (min-width: 1200px) {
+  .border-xl-top {
+    border-top: 1px solid #dee2e6; }
+  .border-xl-right {
+    border-right: 1px solid #dee2e6; }
+  .border-xl-bottom {
+    border-bottom: 1px solid #dee2e6; }
+  .border-xl-left {
+    border-left: 1px solid #dee2e6; }
+  .border-xl-top-0 {
+    border-top: 0; }
+  .border-xl-right-0 {
+    border-right: 0; }
+  .border-xl-bottom-0 {
+    border-bottom: 0; }
+  .border-xl-left-0 {
+    border-left: 0; }
+  .border-xl-x {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6; }
+  .border-xl-y {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6; }
+  .border-xl {
+    border: 1px solid #dee2e6; } }
+
 #nav--top {
   max-width: 1310px; }
   #nav--top #location {
@@ -76,9 +215,9 @@
   text-transform: uppercase; }
 
 #main-container .card .article-img-label {
-  position: relative;
   width: min-content;
   white-space: nowrap;
+  position: relative;
   height: 33px;
   background-color: rgba(255, 255, 255, 0.9);
   font: bold 17px/20px "Roboto-Heading", Fallback, sans-serif;
@@ -254,10 +393,9 @@
   font: 20px/20px "Roboto-Heading", Fallback, sans-serif; }
 
 #in-the-magazine .magazine-labels .category-label {
+  position: relative;
   font: bold 16px/20px "Roboto-Heading", Fallback, sans-serif;
   display: inline-block;
-  width: min-content;
-  white-space: nowrap;
   height: 30px; }
 
 #editors-pick #editors-picks-header {
@@ -391,6 +529,10 @@
   #nav--top #newsweek_Logo {
     width: 395px;
     height: 60px; } }
+
+@media (min-width: 1200px) {
+  #more-story .card-body {
+    border-bottom: none !important; } }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)

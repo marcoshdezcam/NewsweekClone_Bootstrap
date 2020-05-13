@@ -1,5 +1,7 @@
 // BOOTSTRAP OVERRIDES
 
+// RESPONSIVE BORDERS
+
 // CUSTOMS
 @mixin collapsableMenu {
   #collapsibleCategoriesMenu {
@@ -36,6 +38,11 @@
       right: 0;
     }
   }
+}
+
+@mixin adaptWidth {
+  width: min-content;
+  white-space: nowrap;
 }
 
 @mixin columnLeft {
