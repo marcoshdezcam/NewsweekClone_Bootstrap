@@ -64,7 +64,7 @@
 
 @mixin hideScrollBar {
   // Hide scrollbar on the middle column & Keep functionality
-  max-height: 3100px !important;
+  max-height: 3150px !important;
   overflow-y: scroll;
   scrollbar-width: none; /* FirefoxS */
   -ms-overflow-style: none;  /* IE 10+ */
@@ -234,6 +234,26 @@
     }
 
     #sponsored-insights-right {
+      #n-magazine {
+        width: 29px;
+        height: 29px;
+      }
+
+      #ad-title {
+        font: bold 19px/19px $font-Roboto;
+        text-transform: uppercase;
+      }
+
+      #sign-up-button-ad {
+        font: bold 19px/19px $font-Roboto;
+        width: 100px;
+        height: 38px;
+      }
+
+      #update-link {
+        font: bold 15px/15px $font-Roboto;
+      }
+
       .insight-title {
         font: bold 24px/24px $font-Roboto;
       }
