@@ -337,6 +337,41 @@
   background-size: cover;
   height: 345px; }
 
+#social-links {
+  font: bold 12px/12px "Helvetica-Neue", Fallback, sans-serif;
+  text-transform: uppercase; }
+  #social-links .social-icons {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    fill: #6c757d; }
+  #social-links #facebook {
+    background-image: url(../img/social-icons/facebook-square.png); }
+  #social-links #facebook:hover {
+    background-image: url(../img/social-icons/facebook-square_hover.png); }
+  #social-links #twitter {
+    background-image: url(../img/social-icons/twitter.png); }
+  #social-links #twitter:hover {
+    background-image: url(../img/social-icons/twitter_hover.png); }
+  #social-links #instagram {
+    background-image: url(../img/social-icons/instagram.png); }
+  #social-links #instagram:hover {
+    background-image: url(../img/social-icons/instagram_hover.png); }
+  #social-links #tumblr {
+    background-image: url(../img/social-icons/tumblr.png); }
+  #social-links #tumblr:hover {
+    background-image: url(../img/social-icons/tumblr_hover.png); }
+  #social-links #linkedin {
+    background-image: url(../img/social-icons/linkedin-in.png); }
+  #social-links #linkedin:hover {
+    background-image: url(../img/social-icons/linkedin-in_hover.png); }
+
+#other-links #inside-links {
+  font: normal 14px/15px "Helvetica-Neue", Fallback, sans-serif; }
+
 @media (max-width: 767.98px) {
   #nav--top #top-sign-in {
     width: 50px; }

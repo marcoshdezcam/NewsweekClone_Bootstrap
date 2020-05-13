@@ -243,3 +243,64 @@
     height: 345px;
   }
 }
+
+#social-links {
+  font: bold 12px/12px $font-Helvetica;
+  text-transform: uppercase;
+
+  .social-icons {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    fill: $gray-600;
+  }
+
+  #facebook {
+    background-image: url(../img/social-icons/facebook-square.png);
+  }
+
+  #facebook:hover {
+    background-image: url(../img/social-icons/facebook-square_hover.png);
+  }
+
+  #twitter {
+    background-image: url(../img/social-icons/twitter.png);
+  }
+
+  #twitter:hover {
+    background-image: url(../img/social-icons/twitter_hover.png);
+  }
+
+  #instagram {
+    background-image: url(../img/social-icons/instagram.png);
+  }
+
+  #instagram:hover {
+    background-image: url(../img/social-icons/instagram_hover.png);
+  }
+
+  #tumblr {
+    background-image: url(../img/social-icons/tumblr.png);
+  }
+
+  #tumblr:hover {
+    background-image: url(../img/social-icons/tumblr_hover.png);
+  }
+
+  #linkedin {
+    background-image: url(../img/social-icons/linkedin-in.png);
+  }
+
+  #linkedin:hover {
+    background-image: url(../img/social-icons/linkedin-in_hover.png);
+  }
+}
+
+#other-links {
+  #inside-links {
+    font: normal 14px/15px $font-Helvetica;
+  }
+}
