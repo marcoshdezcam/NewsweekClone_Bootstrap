@@ -1702,24 +1702,24 @@
     </main>
     <footer class="container-xl py-4 border-top border-1 bg-whitest">
       <section class="row" id="footer-ads">
-        <div class="col-14 col-lg-10" id="subscribe-ad">
+        <div class="col-14 col-lg-10 p-4">
           <h4 class="ad-header text-primary">Subscribe</h4>
-          <div class="bg-almost-white d-flex p-4">
-            <div class="d-flex" id="covers">
+          <div class="bg-almost-white d-flex p-4" id="subscribe-ad">
+            <div class="d-flex p-4" id="covers">
               <img
                 src="./img/ads/subscribe-back.jpg"
                 alt=""
-                class=""
+                class="m-auto"
                 id="cover-back"
               />
               <img
                 src="./img/ads/subscribe-front.jpg"
                 alt=""
-                class=""
+                class="m-auto"
                 id="cover-front"
               />
             </div>
-            <div class="" id="subscribe-ad-content">
+            <div class="p-4 my-auto" id="subscribe-ad-content">
               <h4 class="ad-title">
                 In-depth Stories You Don't See Elsewhere About Topics You Want
                 to Read!
@@ -1728,15 +1728,17 @@
                 All Access + Weekly Delivery. Choose A Membership That's Perfect
                 for You!
               </p>
-              <button class="bg-primary text-whitest">SUBSCRIBE ></button>
+              <button class="bg-primary text-whitest footer-button" id="subscribe">
+                SUBSCRIBE >
+              </button>
             </div>
           </div>
         </div>
-        <div class="col-14 col-lg-4" id="newsletter-ad">
+        <div class="col-14 col-lg-4 px-0 py-4" id="newsletter-ad">
           <h4 class="ad-header text-primary">Newsletter</h4>
-          <div class="">
-            <img src="./img/ads/subscribe-back.jpg" alt="Subscribe ad image" />
-            <div class="">
+          <div class="d-flex border border-1">
+            <div class="w-50" id="subscribe-img"></div>
+            <div class="w-50 p-4 my-auto">
               <h4 class="ad-title">
                 The Starting 5
               </h4>
@@ -1745,8 +1747,10 @@
                 day with the Starting 5.
               </p>
               <form class="d-flex flex-column" id="free-signup">
-                <input class="" type="text" placeholder="Email adress" />
-                <button class="bg-primary text-whitest">Free sign up ></button>
+                <input class="w-100" type="text" placeholder="Email adress" />
+                <button class="bg-primary text-whitest footer-button w-100" id="sign-up">
+                  Free sign up >
+                </button>
               </form>
             </div>
           </div>
@@ -1754,7 +1758,7 @@
       </section>
       <section class="" id="social-links">
         <img src="./img/Newsweek_Logo_white.png" alt="" />
-        <p>
+        <p class="text-gray-body">
           © 2020 Newsweek
         </p>
 
@@ -1766,27 +1770,63 @@
       </section>
       <section class="" id="other-links">
         <div>
-          <h5>Editions:</h5>
-          <a href="#">U.S. Edition</a>
-          <a href="#">日本</a>
-          <a href="#">Pakistan</a>
-          <a href="#">Polska</a>
-          <a href="#">România</a>
+          <h5 class="text-gray-body">Editions:</h5>
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >U.S. Edition</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >日本</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Pakistan</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Polska</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >România</a
+          >
         </div>
         <div>
-          <a href="#">About Us</a>
-          <a href="#">Corrections</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Editorial Guidelines</a>
-          <a href="#">Advertise</a>
-          <a href="#">Copyright</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Cookie Policy</a>
-          <a href="#">Terms of Sale</a>
-          <a href="#">Archive</a>
-          <a href="#">Announcements</a>
-          <a href="#">Consent preferences</a>
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >About Us</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Corrections</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Contact Us</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Editorial Guidelines</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Advertise</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Copyright</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Terms & Conditions</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Privacy Policy</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Cookie Policy</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Terms of Sale</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Archive</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Announcements</a
+          >
+          <a href="#" class="text-gray-body border-right border-1 mr-2 pr-2"
+            >Consent preferences</a
+          >
         </div>
       </section>
     </footer>
