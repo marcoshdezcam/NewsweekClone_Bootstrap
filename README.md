@@ -1,12 +1,12 @@
-# Newsweek Clone with Bootstrap
+# Newsweek Clone using Bootstrap
 
-> This project is a replica of the Newsweek website using Bootstrap & SASS tu customize it.
+> This project is a replica of the Newsweek website using Bootstrap.
+> SASS for customizations.
+> Bootstrap & customizations compiled in 1 single CSS file to reduce HTTP requests.
+
+[Original](https://www.newsweek.com/)
 
 ![screenshot](./screenshots/desktop_viewport.jpg)
-
-- The value of container-max-widths was changed to fit the original
-- SASS for customizations.
-- Customizations and Bootstrap compiled in 1 single CSS file to reduce HTTP requests.
 
 ## Built With
 
@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo](https://marcoshdezcam.github.io/gh-pages-lives/P7_Newsweek_Bootstrap)
 
 ## Author
 
