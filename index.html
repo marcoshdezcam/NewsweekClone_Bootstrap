@@ -1185,7 +1185,7 @@
           Editor's pick
         </h1>
         <div class="card-group row" id="editors-picks-articles">
-          <article class="card border-whitest col-7">
+          <article class="card border-whitest mx-2">
             <img src="./img/editors-pick/1.jpg" alt="" class="card-img-top" />
             <span class="category-label bg-label text-primary text-center p-2"
               >Essays</span
@@ -1200,7 +1200,7 @@
               </p>
             </div>
           </article>
-          <article class="card border-whitest col-7">
+          <article class="card border-whitest mx-2">
             <img src="./img/editors-pick/2.jpg" alt="" class="card-img-top" />
             <span class="category-label bg-label text-primary text-center p-2"
               >Tech & Science</span
@@ -1218,7 +1218,7 @@
             </div>
           </article>
           <div class="w-100 d-none d-md-block d-lg-none"></div>
-          <article class="card border-whitest col-7">
+          <article class="card border-whitest mx-2">
             <img src="./img/editors-pick/3.jpg" alt="" class="card-img-top" />
             <span class="category-label bg-label text-primary text-center p-2"
               >U.S.</span
@@ -1234,7 +1234,8 @@
               </p>
             </div>
           </article>
-          <article class="card border-whitest col-7">
+          <div class="w-100 d-sm-block d-md-none"></div>
+          <article class="card border-whitest mx-2">
             <img src="./img/editors-pick/4.jpg" alt="" class="card-img-top" />
             <span class="category-label bg-label text-primary text-center p-2"
               >News</span
@@ -1251,7 +1252,7 @@
             </div>
           </article>
           <div class="w-100 d-none d-md-block d-lg-none d-xl-block"></div>
-          <article class="card border-whitest col-7">
+          <article class="card border-whitest mx-2">
             <img src="./img/editors-pick/5.jpg" alt="" class="card-img-top" />
             <span class="category-label bg-label text-primary text-center p-2"
               >U.S.</span
@@ -1267,7 +1268,7 @@
               </p>
             </div>
           </article>
-          <article class="card border-whitest col-7">
+          <article class="card border-whitest mx-2">
             <img src="./img/editors-pick/6.jpg" alt="" class="card-img-top" />
             <span class="category-label bg-label text-primary text-center p-2"
               >News</span
@@ -1285,7 +1286,7 @@
             </div>
           </article>
           <div class="w-100 d-none d-md-block d-lg-none"></div>
-          <article class="card border-whitest col-7">
+          <article class="card border-whitest mx-2">
             <img src="./img/editors-pick/7.jpg" alt="" class="card-img-top" />
             <span class="category-label bg-label text-primary text-center p-2"
               >U.S.</span
@@ -1301,7 +1302,7 @@
               </p>
             </div>
           </article>
-          <article class="card border-whitest col-7">
+          <article class="card border-whitest mx-2">
             <img src="./img/editors-pick/8.jpg" alt="" class="card-img-top" />
             <span class="category-label bg-label text-primary text-center p-2"
               >Culture</span
@@ -1724,7 +1725,7 @@
       <section class="row" id="footer-ads">
         <div class="col-14 col-lg-10 p-4">
           <h4 class="ad-header text-primary">Subscribe</h4>
-          <div class="bg-almost-white d-flex p-4" id="subscribe-ad">
+          <div class="bg-almost-white d-flex p-sm-0 p-md-4" id="subscribe-ad">
             <div class="d-flex p-4" id="covers">
               <img
                 src="./img/ads/subscribe-back.jpg"
@@ -1739,7 +1740,10 @@
                 id="cover-front"
               />
             </div>
-            <div class="p-4 my-auto mx-4" id="subscribe-ad-content">
+            <div
+              class="p-4 my-auto mx-md-4 mx-sm-0 d-md-block"
+              id="subscribe-ad-content"
+            >
               <h4 class="ad-title">
                 In-depth Stories You Don't See Elsewhere About Topics You Want
                 to Read!
@@ -1783,12 +1787,12 @@
         </div>
       </section>
       <section
-        class="d-flex justify-content-between border-top border-1 border-gray-bg my-4 pt-4"
+        class="d-flex flex-column flex-md-row justify-content-between border-top border-1 border-gray-bg my-4 pt-4"
         id="social-links"
       >
-        <div class="d-flex">
-          <img src="./img/Newsweek_Logo_white.png" alt="" />
-          <p class="text-gray-body my-auto">
+        <div class="d-flex flex-column flex-md-row">
+          <img id="footer-logo" src="./img/Newsweek_Logo_white.png" alt="" />
+          <p class="text-gray-body my-sm-0 my-md-auto">
             © 2020 Newsweek
           </p>
         </div>
@@ -1801,7 +1805,7 @@
         </div>
       </section>
       <section class="border-top border-1 border-gray-bg" id="other-links">
-        <div class="d-flex my-2">
+        <div class="d-flex my-2" id="language-editions">
           <h5 class="text-gray-body m-0 mr-4">Editions:</h5>
           <a
             href="#"

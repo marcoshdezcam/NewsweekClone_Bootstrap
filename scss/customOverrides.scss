@@ -299,6 +299,16 @@
 }
 
 #other-links {
+  #language-editions {
+    h5 {
+      font: bold 14px/15px $font-Helvetica;
+    }
+
+    a {
+      font: normal 14px/15px $font-Helvetica;
+    }
+  }
+
   #inside-links {
     font: normal 14px/15px $font-Helvetica;
   }

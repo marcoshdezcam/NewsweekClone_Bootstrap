@@ -368,6 +368,12 @@
   #social-links #linkedin:hover {
     background-image: url(../img/social-icons/linkedin-in_hover.png); }
 
+#other-links #language-editions h5 {
+  font: bold 14px/15px "Helvetica-Neue", Fallback, sans-serif; }
+
+#other-links #language-editions a {
+  font: normal 14px/15px "Helvetica-Neue", Fallback, sans-serif; }
+
 #other-links #inside-links {
   font: normal 14px/15px "Helvetica-Neue", Fallback, sans-serif; }
 
@@ -378,7 +384,26 @@
     width: 80px; }
   #nav--top #menu-icon {
     width: 26px;
-    height: 30px; } }
+    height: 30px; }
+  #main-section #middle-col-bigger {
+    max-height: none; }
+  #editors-pick .card {
+    width: 100%; }
+  #footer-ads #subscribe-ad {
+    flex-direction: column; }
+    #footer-ads #subscribe-ad #covers {
+      width: 100%; }
+    #footer-ads #subscribe-ad #subscribe-ad-content {
+      width: 100%;
+      position: relative;
+      bottom: 170px;
+      z-index: 3;
+      text-align: center; }
+      #footer-ads #subscribe-ad #subscribe-ad-content .ad-title {
+        font: bold 20px/28px "Roboto-Heading", Fallback, sans-serif; }
+  #social-links #footer-logo {
+    width: 236px;
+    height: 36px; } }
 
 @media (min-width: 768px) {
   nav .btn {

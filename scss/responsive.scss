@@ -13,6 +13,47 @@
       height: 30px;
     }
   }
+
+  #main-section {
+    #middle-col-bigger {
+      max-height: none;
+    }
+  }
+
+  #editors-pick {
+    .card {
+      width: 100%;
+    }
+  }
+
+  #footer-ads {
+    #subscribe-ad {
+      flex-direction: column;
+
+      #covers {
+        width: 100%;
+      }
+
+      #subscribe-ad-content {
+        width: 100%;
+        position: relative;
+        bottom: 170px;
+        z-index: 3;
+        text-align: center;
+
+        .ad-title {
+          font: bold 20px/28px $font-Roboto;
+        }
+      }
+    }
+  }
+
+  #social-links {
+    #footer-logo {
+      width: 236px;
+      height: 36px;
+    }
+  }
 }
 
 @include media-breakpoint-up(md) {
