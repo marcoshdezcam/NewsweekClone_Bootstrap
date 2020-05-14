@@ -1,7 +1,3 @@
-// BOOTSTRAP OVERRIDES
-
-// RESPONSIVE BORDERS
-
 // CUSTOMS
 @mixin collapsableMenu {
   #collapsibleCategoriesMenu {
@@ -10,15 +6,15 @@
 
     #category-links {
       margin-right: 80px;
-    }
 
-    a {
-      color: rgb(0, 0, 0);
-      font: 17px/17px $font-Roboto;
-    }
+      .menu-link {
+        color: rgb(0, 0, 0);
+        font: 17px/17px $font-Roboto;
 
-    a:hover {
-      color: #f72210;
+        &:hover {
+          color: #f72210;
+        }
+      }
     }
 
     #search-input {
@@ -53,11 +49,11 @@
 @mixin columnLeft {
   #left-col {
     #featured-stories {
-      .card-title {
+      .featured-title {
         font: bold 24px/24px $font-Roboto;
       }
 
-      .card-text {
+      .featured-text {
         font: 15px/20px $font-Helvetica;
       }
     }
@@ -75,7 +71,7 @@
 }
 
 @mixin hideScrollBar {
-  // Hide scrollbar on the middle column & Keep functionality
+  // Hide scrollbar & Keep functionality
   max-height: 3150px !important;
   overflow-y: scroll;
   scrollbar-width: none; /* FirefoxS */
@@ -90,18 +86,18 @@
     @include hideScrollBar;
 
     #top-story {
-      .card-title {
+      .top-title {
         font: bold 22px/24px $font-Roboto;
       }
 
-      .card-text {
+      .top-text {
         font: 15px/20px $font-Helvetica;
       }
     }
 
     #heroes-of-the-pandemic,
     #culture-and-travel {
-      .card-img-overlay {
+      .label-img {
         background-color: #c2d4d7;
         width: 100px;
         height: 20px;
@@ -110,15 +106,15 @@
         font: 300 13px/20px $font-Helvetica;
       }
 
-      .card-body {
+      .article-content {
         position: relative;
         top: -20px;
 
-        .card-title {
+        .article-title {
           font: 18px/20px $font-Lora;
         }
 
-        .card-text {
+        .article-text {
           font: 15px/20px $font-Helvetica;
         }
       }
@@ -126,20 +122,18 @@
 
     #more-stories {
       .more-story {
-        font: 17px/20px $font-Roboto;
-
-        .card-title {
-          font: 17px/20px $font-Roboto;
-        }
-
-        .card-body {
+        .story-body {
           bottom: 0;
 
-          .card-text {
+          .story-title {
+            font: 17px/20px $font-Roboto;
+          }
+
+          .story-text {
             font: bold 15px/20px $font-Helvetica;
           }
 
-          .card-img {
+          .story-img {
             width: 95px;
             height: 95px;
           }
@@ -152,8 +146,6 @@
 @mixin columnRight {
   #right-col {
     #opinion {
-      //height: 385px;
-
       #opinion-cards {
         height: 90%;
 

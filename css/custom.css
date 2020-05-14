@@ -28,7 +28,7 @@
     width: 132px;
     height: 20px;
     fill: white; }
-  #nav--top .btn {
+  #nav--top .nav--button {
     width: 130px;
     border-radius: 0;
     font: 14px/14px "Roboto-Heading", Fallback, sans-serif;
@@ -50,11 +50,11 @@
     position: relative; }
     #nav--top #collapsibleCategoriesMenu #category-links {
       margin-right: 80px; }
-    #nav--top #collapsibleCategoriesMenu a {
-      color: black;
-      font: 17px/17px "Roboto-Heading", Fallback, sans-serif; }
-    #nav--top #collapsibleCategoriesMenu a:hover {
-      color: #f72210; }
+      #nav--top #collapsibleCategoriesMenu #category-links .menu-link {
+        color: black;
+        font: 17px/17px "Roboto-Heading", Fallback, sans-serif; }
+        #nav--top #collapsibleCategoriesMenu #category-links .menu-link:hover {
+          color: #f72210; }
     #nav--top #collapsibleCategoriesMenu #search-input {
       background: url(../img/icon-search-glass.svg) no-repeat;
       background-size: contain;
@@ -78,7 +78,7 @@
   font: bold 16px/16px "Roboto-Heading", Fallback, sans-serif;
   text-transform: uppercase; }
 
-#main-container .card .article-img-label {
+#main-container .card-article .article-img-label {
   width: min-content;
   white-space: nowrap;
   position: relative;
@@ -88,14 +88,14 @@
   top: -33px;
   left: 0; }
 
-#main-container .card .card-body {
+#main-container .card-article .card-content {
   position: relative;
   bottom: 33px; }
 
-#main-container #main-section #left-col #featured-stories .card-title {
+#main-container #main-section #left-col #featured-stories .featured-title {
   font: bold 24px/24px "Roboto-Heading", Fallback, sans-serif; }
 
-#main-container #main-section #left-col #featured-stories .card-text {
+#main-container #main-section #left-col #featured-stories .featured-text {
   font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
 
 #main-container #main-section #left-col #sponsored-insights-left .insight-title {
@@ -114,39 +114,37 @@
   #main-container #main-section #middle-col-bigger::-webkit-scrollbar {
     display: none;
     /* Chrome Safari */ }
-  #main-container #main-section #middle-col-bigger #top-story .card-title {
+  #main-container #main-section #middle-col-bigger #top-story .top-title {
     font: bold 22px/24px "Roboto-Heading", Fallback, sans-serif; }
-  #main-container #main-section #middle-col-bigger #top-story .card-text {
+  #main-container #main-section #middle-col-bigger #top-story .top-text {
     font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
-  #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-img-overlay,
-  #main-container #main-section #middle-col-bigger #culture-and-travel .card-img-overlay {
+  #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .label-img,
+  #main-container #main-section #middle-col-bigger #culture-and-travel .label-img {
     background-color: #c2d4d7;
     width: 100px;
     height: 20px;
     position: relative;
     top: -20px;
     font: 300 13px/20px "Helvetica-Neue", Fallback, sans-serif; }
-  #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-body,
-  #main-container #main-section #middle-col-bigger #culture-and-travel .card-body {
+  #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .article-content,
+  #main-container #main-section #middle-col-bigger #culture-and-travel .article-content {
     position: relative;
     top: -20px; }
-    #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-body .card-title,
-    #main-container #main-section #middle-col-bigger #culture-and-travel .card-body .card-title {
+    #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .article-content .article-title,
+    #main-container #main-section #middle-col-bigger #culture-and-travel .article-content .article-title {
       font: 18px/20px "Lora", Fallback, sans-serif; }
-    #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-body .card-text,
-    #main-container #main-section #middle-col-bigger #culture-and-travel .card-body .card-text {
+    #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .article-content .article-text,
+    #main-container #main-section #middle-col-bigger #culture-and-travel .article-content .article-text {
       font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
-  #main-container #main-section #middle-col-bigger #more-stories .more-story {
-    font: 17px/20px "Roboto-Heading", Fallback, sans-serif; }
-    #main-container #main-section #middle-col-bigger #more-stories .more-story .card-title {
+  #main-container #main-section #middle-col-bigger #more-stories .more-story .story-body {
+    bottom: 0; }
+    #main-container #main-section #middle-col-bigger #more-stories .more-story .story-body .story-title {
       font: 17px/20px "Roboto-Heading", Fallback, sans-serif; }
-    #main-container #main-section #middle-col-bigger #more-stories .more-story .card-body {
-      bottom: 0; }
-      #main-container #main-section #middle-col-bigger #more-stories .more-story .card-body .card-text {
-        font: bold 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
-      #main-container #main-section #middle-col-bigger #more-stories .more-story .card-body .card-img {
-        width: 95px;
-        height: 95px; }
+    #main-container #main-section #middle-col-bigger #more-stories .more-story .story-body .story-text {
+      font: bold 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
+    #main-container #main-section #middle-col-bigger #more-stories .more-story .story-body .story-img {
+      width: 95px;
+      height: 95px; }
 
 #main-container #main-section #right-col #opinion #opinion-cards {
   height: 90%; }
@@ -253,7 +251,7 @@
   position: relative;
   bottom: 33px; }
 
-#in-the-magazine .card-title {
+#in-the-magazine .magazine-title {
   font: 20px/20px "Roboto-Heading", Fallback, sans-serif; }
 
 #in-the-magazine .magazine-labels .category-label {
@@ -274,12 +272,12 @@
   bottom: 33px;
   font: normal 17px/22px "Roboto-Heading", Fallback, sans-serif; }
 
-#editors-pick #editors-picks-articles .card-body {
+#editors-pick #editors-picks-articles .pick-body {
   position: relative;
   bottom: 33px; }
-  #editors-pick #editors-picks-articles .card-body .pick-title {
+  #editors-pick #editors-picks-articles .pick-body .pick-title {
     font: 24px/24px "Roboto-Heading", Fallback, sans-serif; }
-  #editors-pick #editors-picks-articles .card-body .pick-text {
+  #editors-pick #editors-picks-articles .pick-body .pick-text {
     font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
 
 #categories .category-header {
@@ -371,10 +369,10 @@
   #social-links #linkedin:hover {
     background-image: url(../img/social-icons/linkedin-in_hover.png); }
 
-#other-links #language-editions h5 {
+#other-links #language-editions #other-links-title {
   font: bold 14px/15px "Helvetica-Neue", Fallback, sans-serif; }
 
-#other-links #language-editions a {
+#other-links #language-editions .other-link {
   font: normal 14px/15px "Helvetica-Neue", Fallback, sans-serif; }
 
 #other-links #inside-links {

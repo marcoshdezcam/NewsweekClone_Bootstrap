@@ -25,7 +25,7 @@
     fill: rgb(255, 255, 255);
   }
 
-  .btn {
+  .nav--button {
     width: 130px;
     border-radius: 0;
     font: 14px/14px $font-Roboto;
@@ -61,7 +61,7 @@
     text-transform: uppercase;
   }
 
-  .card {
+  .card-article {
     .article-img-label {
       @include adaptWidth;
 
@@ -73,7 +73,7 @@
       left: 0;
     }
 
-    .card-body {
+    .card-content {
       position: relative;
       bottom: 33px;
     }
@@ -116,7 +116,7 @@
     bottom: 33px;
   }
 
-  .card-title {
+  .magazine-title {
     font: 20px/20px $font-Roboto;
   }
 
@@ -146,7 +146,7 @@
       font: normal 17px/22px $font-Roboto;
     }
 
-    .card-body {
+    .pick-body {
       position: relative;
       bottom: 33px;
 
@@ -300,16 +300,20 @@
 
 #other-links {
   #language-editions {
-    h5 {
+    #other-links-title {
       font: bold 14px/15px $font-Helvetica;
     }
 
-    a {
+    .other-link {
       font: normal 14px/15px $font-Helvetica;
     }
   }
 
   #inside-links {
     font: normal 14px/15px $font-Helvetica;
+
+    .inside-link {
+
+    }
   }
 }

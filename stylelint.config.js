@@ -3,6 +3,7 @@
 module.exports = {
   extends: "stylelint-config-recommended",
   rules: {
+    //s"no-descending-specificity": ignore,
     "at-rule-empty-line-before": [
       "always",
       {
