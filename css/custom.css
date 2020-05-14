@@ -48,6 +48,8 @@
   #nav--top #collapsibleCategoriesMenu {
     background-color: white;
     position: relative; }
+    #nav--top #collapsibleCategoriesMenu #category-links {
+      margin-right: 80px; }
     #nav--top #collapsibleCategoriesMenu a {
       color: black;
       font: 17px/17px "Roboto-Heading", Fallback, sans-serif; }
@@ -57,12 +59,13 @@
       background: url(../img/icon-search-glass.svg) no-repeat;
       background-size: contain;
       background-position: right top;
-      width: 20px;
-      height: 20px;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #333; }
+      width: 90px;
+      height: 30px;
+      font: bold 16px/16px "Helvetica-Neue", Fallback, sans-serif;
+      color: #333;
+      border-style: hidden; }
     #nav--top #collapsibleCategoriesMenu #navbar-red-polygon {
-      width: 75px;
+      width: 80px;
       height: 15px;
       background-color: #ff0500;
       background-size: cover;

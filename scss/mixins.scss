@@ -8,6 +8,10 @@
     background-color: rgb(255, 255, 255);
     position: relative;
 
+    #category-links {
+      margin-right: 80px;
+    }
+
     a {
       color: rgb(0, 0, 0);
       font: 17px/17px $font-Roboto;
@@ -21,14 +25,15 @@
       background: url(../img/icon-search-glass.svg) no-repeat;
       background-size: contain;
       background-position: right top;
-      width: 20px;
-      height: 20px;
-      font-family: Arial, Helvetica, sans-serif;
+      width: 90px;
+      height: 30px;
+      font: bold 16px/16px $font-Helvetica;
       color: #333;
+      border-style: hidden;
     }
 
     #navbar-red-polygon {
-      width: 75px;
+      width: 80px;
       height: 15px;
       background-color: #ff0500;
       background-size: cover;
