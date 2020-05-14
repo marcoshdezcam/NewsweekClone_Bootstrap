@@ -13,20 +13,6 @@
       height: 30px;
     }
   }
-
-  // #main-container {
-  //   #main-section {
-  //     #left-col {
-  //       #featured-stories {
-  //         article {
-  //           .article-img-label {
-  //             top: 202px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 @include media-breakpoint-up(md) {
@@ -40,11 +26,17 @@
     }
   }
 
-  // #more-stories {
-  //   article {
-  //     border-bottom: black solid 3px !important;
-  //   }
-  // }
+  #footer-ads {
+    #subscribe-ad {
+      #covers {
+        width: 50%;
+      }
+
+      #subscribe-ad-content {
+        width: 50%;
+      }
+    }
+  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -57,8 +49,8 @@
 }
 
 @include media-breakpoint-up(xl) {
-  #more-story {
-    .card-body {
+  .more-story {
+    .border-bottom {
       border-bottom: none !important;
     }
   }

@@ -110,7 +110,7 @@
         top: -20px;
 
         .card-title {
-          font: 20px/22px $font-Lora;
+          font: 18px/20px $font-Lora;
         }
 
         .card-text {
@@ -123,11 +123,15 @@
       .more-story {
         font: 17px/20px $font-Roboto;
 
+        .card-title {
+          font: 17px/20px $font-Roboto;
+        }
+
         .card-body {
           bottom: 0;
 
           .card-text {
-            font: 15px/20px $font-Helvetica;
+            font: bold 15px/20px $font-Helvetica;
           }
 
           .card-img {
@@ -143,7 +147,7 @@
 @mixin columnRight {
   #right-col {
     #opinion {
-      height: 385px;
+      //height: 385px;
 
       #opinion-cards {
         height: 90%;

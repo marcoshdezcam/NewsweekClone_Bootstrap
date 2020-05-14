@@ -13,145 +13,6 @@
   src: url("../fonts/Helvetica-Neue/HelveticaNeueThin.eot");
   src: url("../fonts/Helvetica-Neue/HelveticaNeueThin.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica-Neue/HelveticaNeueThin.woff2") format("woff2"), url("../fonts/Helvetica-Neue/HelveticaNeueThin.woff") format("woff"), url("../fonts/Helvetica-Neue/HelveticaNeueThin.ttf") format("truetype"), url("../fonts/Helvetica-Neue/HelveticaNeueThin.svg#Helvetica-Neue") format("svg"); }
 
-.border-top {
-  border-top: 1px solid #dee2e6; }
-
-.border-right {
-  border-right: 1px solid #dee2e6; }
-
-.border-bottom {
-  border-bottom: 1px solid #dee2e6; }
-
-.border-left {
-  border-left: 1px solid #dee2e6; }
-
-.border-top-0 {
-  border-top: 0; }
-
-.border-right-0 {
-  border-right: 0; }
-
-.border-bottom-0 {
-  border-bottom: 0; }
-
-.border-left-0 {
-  border-left: 0; }
-
-.border-x {
-  border-left: 1px solid #dee2e6;
-  border-right: 1px solid #dee2e6; }
-
-.border-y {
-  border-top: 1px solid #dee2e6;
-  border-bottom: 1px solid #dee2e6; }
-
-.border {
-  border: 1px solid #dee2e6; }
-
-@media (min-width: 576px) {
-  .border-sm-top {
-    border-top: 1px solid #dee2e6; }
-  .border-sm-right {
-    border-right: 1px solid #dee2e6; }
-  .border-sm-bottom {
-    border-bottom: 1px solid #dee2e6; }
-  .border-sm-left {
-    border-left: 1px solid #dee2e6; }
-  .border-sm-top-0 {
-    border-top: 0; }
-  .border-sm-right-0 {
-    border-right: 0; }
-  .border-sm-bottom-0 {
-    border-bottom: 0; }
-  .border-sm-left-0 {
-    border-left: 0; }
-  .border-sm-x {
-    border-left: 1px solid #dee2e6;
-    border-right: 1px solid #dee2e6; }
-  .border-sm-y {
-    border-top: 1px solid #dee2e6;
-    border-bottom: 1px solid #dee2e6; }
-  .border-sm {
-    border: 1px solid #dee2e6; } }
-
-@media (min-width: 768px) {
-  .border-md-top {
-    border-top: 1px solid #dee2e6; }
-  .border-md-right {
-    border-right: 1px solid #dee2e6; }
-  .border-md-bottom {
-    border-bottom: 1px solid #dee2e6; }
-  .border-md-left {
-    border-left: 1px solid #dee2e6; }
-  .border-md-top-0 {
-    border-top: 0; }
-  .border-md-right-0 {
-    border-right: 0; }
-  .border-md-bottom-0 {
-    border-bottom: 0; }
-  .border-md-left-0 {
-    border-left: 0; }
-  .border-md-x {
-    border-left: 1px solid #dee2e6;
-    border-right: 1px solid #dee2e6; }
-  .border-md-y {
-    border-top: 1px solid #dee2e6;
-    border-bottom: 1px solid #dee2e6; }
-  .border-md {
-    border: 1px solid #dee2e6; } }
-
-@media (min-width: 992px) {
-  .border-lg-top {
-    border-top: 1px solid #dee2e6; }
-  .border-lg-right {
-    border-right: 1px solid #dee2e6; }
-  .border-lg-bottom {
-    border-bottom: 1px solid #dee2e6; }
-  .border-lg-left {
-    border-left: 1px solid #dee2e6; }
-  .border-lg-top-0 {
-    border-top: 0; }
-  .border-lg-right-0 {
-    border-right: 0; }
-  .border-lg-bottom-0 {
-    border-bottom: 0; }
-  .border-lg-left-0 {
-    border-left: 0; }
-  .border-lg-x {
-    border-left: 1px solid #dee2e6;
-    border-right: 1px solid #dee2e6; }
-  .border-lg-y {
-    border-top: 1px solid #dee2e6;
-    border-bottom: 1px solid #dee2e6; }
-  .border-lg {
-    border: 1px solid #dee2e6; } }
-
-@media (min-width: 1200px) {
-  .border-xl-top {
-    border-top: 1px solid #dee2e6; }
-  .border-xl-right {
-    border-right: 1px solid #dee2e6; }
-  .border-xl-bottom {
-    border-bottom: 1px solid #dee2e6; }
-  .border-xl-left {
-    border-left: 1px solid #dee2e6; }
-  .border-xl-top-0 {
-    border-top: 0; }
-  .border-xl-right-0 {
-    border-right: 0; }
-  .border-xl-bottom-0 {
-    border-bottom: 0; }
-  .border-xl-left-0 {
-    border-left: 0; }
-  .border-xl-x {
-    border-left: 1px solid #dee2e6;
-    border-right: 1px solid #dee2e6; }
-  .border-xl-y {
-    border-top: 1px solid #dee2e6;
-    border-bottom: 1px solid #dee2e6; }
-  .border-xl {
-    border: 1px solid #dee2e6; } }
-
 #nav--top {
   max-width: 1310px; }
   #nav--top #location {
@@ -268,39 +129,39 @@
     top: -20px; }
     #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-body .card-title,
     #main-container #main-section #middle-col-bigger #culture-and-travel .card-body .card-title {
-      font: 20px/22px "Lora", Fallback, sans-serif; }
+      font: 18px/20px "Lora", Fallback, sans-serif; }
     #main-container #main-section #middle-col-bigger #heroes-of-the-pandemic .card-body .card-text,
     #main-container #main-section #middle-col-bigger #culture-and-travel .card-body .card-text {
       font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
   #main-container #main-section #middle-col-bigger #more-stories .more-story {
     font: 17px/20px "Roboto-Heading", Fallback, sans-serif; }
+    #main-container #main-section #middle-col-bigger #more-stories .more-story .card-title {
+      font: 17px/20px "Roboto-Heading", Fallback, sans-serif; }
     #main-container #main-section #middle-col-bigger #more-stories .more-story .card-body {
       bottom: 0; }
       #main-container #main-section #middle-col-bigger #more-stories .more-story .card-body .card-text {
-        font: 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
+        font: bold 15px/20px "Helvetica-Neue", Fallback, sans-serif; }
       #main-container #main-section #middle-col-bigger #more-stories .more-story .card-body .card-img {
         width: 95px;
         height: 95px; }
 
-#main-container #main-section #right-col #opinion {
-  height: 385px; }
-  #main-container #main-section #right-col #opinion #opinion-cards {
-    height: 90%; }
-    #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-img {
-      width: 63px;
-      height: 63px; }
-    #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body {
-      width: 80%; }
-      #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body .card-title {
-        font: bold 16px/20px "Roboto-Heading", Fallback, sans-serif; }
-        #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body .card-title a {
-          color: black; }
-        #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body .card-title a:hover {
-          color: #f72210;
-          text-decoration: none; }
-      #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body .opinion-author {
-        font: bold 14px/16px "Roboto-Heading", Fallback, sans-serif;
-        text-transform: uppercase; }
+#main-container #main-section #right-col #opinion #opinion-cards {
+  height: 90%; }
+  #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-img {
+    width: 63px;
+    height: 63px; }
+  #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body {
+    width: 80%; }
+    #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body .card-title {
+      font: bold 16px/20px "Roboto-Heading", Fallback, sans-serif; }
+      #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body .card-title a {
+        color: black; }
+      #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body .card-title a:hover {
+        color: #f72210;
+        text-decoration: none; }
+    #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body .opinion-author {
+      font: bold 14px/16px "Roboto-Heading", Fallback, sans-serif;
+      text-transform: uppercase; }
 
 #main-container #main-section #right-col #the-debate .debate-container {
   height: 90%; }
@@ -394,7 +255,7 @@
 
 #in-the-magazine .magazine-labels .category-label {
   position: relative;
-  font: bold 16px/20px "Roboto-Heading", Fallback, sans-serif;
+  font: bold 16px/22px "Roboto-Heading", Fallback, sans-serif;
   display: inline-block;
   height: 30px; }
 
@@ -523,7 +384,11 @@
   nav .btn {
     font: 18px/18px 'Roboto-Heading', Fallback, sans-serif; }
     nav .btn #top-subscribe {
-      width: 126px; } }
+      width: 126px; }
+  #footer-ads #subscribe-ad #covers {
+    width: 50%; }
+  #footer-ads #subscribe-ad #subscribe-ad-content {
+    width: 50%; } }
 
 @media (min-width: 992px) {
   #nav--top #newsweek_Logo {
@@ -531,7 +396,7 @@
     height: 60px; } }
 
 @media (min-width: 1200px) {
-  #more-story .card-body {
+  .more-story .border-bottom {
     border-bottom: none !important; } }
 
 /*!
