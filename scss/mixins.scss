@@ -150,24 +150,24 @@
         height: 90%;
 
         .opinion-card {
-          .card-img {
+          .opinion-img {
             width: 63px;
             height: 63px;
           }
 
-          .card-body {
+          .opinion-body {
             width: 80%;
 
-            .card-title {
+            .opinion-title {
               font: bold 16px/20px $font-Roboto;
 
-              a {
+              .opinion-link {
                 color: black;
-              }
 
-              a:hover {
-                color: #f72210;
-                text-decoration: none;
+                &:hover {
+                  color: #f72210;
+                  text-decoration: none;
+                }
               }
             }
 
@@ -192,7 +192,7 @@
           padding: 10px 0;
         }
 
-        article {
+        .vs-article {
           height: 45%;
           border-width: 4px !important;
 
@@ -235,7 +235,7 @@
         height: 95px;
       }
 
-      h4 {
+      .latest-title {
         font: bold 15px/20px $font-Roboto;
         width: 75%;
       }

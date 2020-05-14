@@ -148,19 +148,19 @@
 
 #main-container #main-section #right-col #opinion #opinion-cards {
   height: 90%; }
-  #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-img {
+  #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .opinion-img {
     width: 63px;
     height: 63px; }
-  #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body {
+  #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .opinion-body {
     width: 80%; }
-    #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body .card-title {
+    #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .opinion-body .opinion-title {
       font: bold 16px/20px "Roboto-Heading", Fallback, sans-serif; }
-      #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body .card-title a {
+      #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .opinion-body .opinion-title .opinion-link {
         color: black; }
-      #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body .card-title a:hover {
-        color: #f72210;
-        text-decoration: none; }
-    #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .card-body .opinion-author {
+        #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .opinion-body .opinion-title .opinion-link:hover {
+          color: #f72210;
+          text-decoration: none; }
+    #main-container #main-section #right-col #opinion #opinion-cards .opinion-card .opinion-body .opinion-author {
       font: bold 14px/16px "Roboto-Heading", Fallback, sans-serif;
       text-transform: uppercase; }
 
@@ -172,26 +172,26 @@
     width: 40px;
     text-align: center;
     padding: 10px 0; }
-  #main-container #main-section #right-col #the-debate .debate-container article {
+  #main-container #main-section #right-col #the-debate .debate-container .vs-article {
     height: 45%;
     border-width: 4px !important; }
-    #main-container #main-section #right-col #the-debate .debate-container article .debate-info {
+    #main-container #main-section #right-col #the-debate .debate-container .vs-article .debate-info {
       font: bold 17px/21px "Roboto-Heading", Fallback, sans-serif;
       width: 75%; }
-    #main-container #main-section #right-col #the-debate .debate-container article .debate-author {
+    #main-container #main-section #right-col #the-debate .debate-container .vs-article .debate-author {
       height: 50%;
       width: 100%; }
-      #main-container #main-section #right-col #the-debate .debate-container article .debate-author .author-lines {
+      #main-container #main-section #right-col #the-debate .debate-container .vs-article .debate-author .author-lines {
         width: 100%;
         height: 5px;
         top: 15px;
         position: relative;
         z-index: 2;
         border-color: #d9d9d9; }
-      #main-container #main-section #right-col #the-debate .debate-container article .debate-author .author-name {
+      #main-container #main-section #right-col #the-debate .debate-container .vs-article .debate-author .author-name {
         font: bold 14px/21px "Roboto-Heading", Fallback, sans-serif;
         width: 90%; }
-      #main-container #main-section #right-col #the-debate .debate-container article .debate-author .debate-author-img {
+      #main-container #main-section #right-col #the-debate .debate-container .vs-article .debate-author .debate-author-img {
         width: 63px;
         height: 63px;
         z-index: 3; }
@@ -200,7 +200,7 @@
   width: 95px;
   height: 95px; }
 
-#main-container #main-section #right-col #latest-news h4 {
+#main-container #main-section #right-col #latest-news .latest-title {
   font: bold 15px/20px "Roboto-Heading", Fallback, sans-serif;
   width: 75%; }
 
@@ -407,9 +407,9 @@
     height: 36px; } }
 
 @media (min-width: 768px) {
-  nav .btn {
+  nav .nav-button {
     font: 18px/18px 'Roboto-Heading', Fallback, sans-serif; }
-    nav .btn #top-subscribe {
+    nav .nav-button #top-subscribe {
       width: 126px; }
   #footer-ads #subscribe-ad #covers {
     width: 50%; }
