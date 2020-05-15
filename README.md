@@ -1,8 +1,9 @@
 # Newsweek Clone using Bootstrap
 
 > This project is a replica of the Newsweek website using Bootstrap.
-> SASS for customizations.
-> Bootstrap & customizations compiled in 1 single CSS file to reduce HTTP requests.
+
+- SASS for customizations.
+- Bootstrap & customizations compiled in 1 single CSS file to reduce HTTP requests.
 
 [Original](https://www.newsweek.com/)
 
