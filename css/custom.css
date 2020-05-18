@@ -402,6 +402,11 @@
       text-align: center; }
       #footer-ads #subscribe-ad #subscribe-ad-content .ad-title {
         font: bold 20px/28px "Roboto-Heading", Fallback, sans-serif; }
+  #footer-ads #newsletter-ad #subscribe-img {
+    display: none; }
+  #footer-ads #newsletter-ad #ad-content {
+    width: 100% !important;
+    text-align: center; }
   #social-links #footer-logo {
     width: 236px;
     height: 36px; } }
