@@ -56,6 +56,12 @@
   }
 }
 
+@include media-breakpoint-only(md) {
+  #sponsored-insights-right {
+    margin: 0 25%;
+  }
+}
+
 @include media-breakpoint-up(md) {
   nav {
     .nav-button {
