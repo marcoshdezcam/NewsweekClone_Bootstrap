@@ -1,0 +1,16 @@
+// REQUIRED BOOTSTRAP IMPORTS
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+// CUSTOM IMPORTS
+@import '../scss/fonts';
+@import '../scss/variables';
+@import '../scss/mixins';
+@import '../scss/customOverrides';
+
+// RESPONSIVE
+@import '../scss/responsive';
+
+// IMPORT BOOTSTRAP
+@import '../node_modules/bootstrap/scss/bootstrap';

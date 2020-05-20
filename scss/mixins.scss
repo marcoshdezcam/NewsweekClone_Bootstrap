@@ -1,0 +1,274 @@
+// CUSTOMS
+@mixin collapsableMenu {
+  #collapsibleCategoriesMenu {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+
+    #category-links {
+      margin-right: 80px;
+
+      .menu-link {
+        color: rgb(0, 0, 0);
+        font: 17px/17px $font-Roboto;
+
+        &:hover {
+          color: #f72210;
+        }
+      }
+    }
+
+    #search-input {
+      background: url(../img/icon-search-glass.svg) no-repeat;
+      background-size: contain;
+      background-position: right top;
+      width: 90px;
+      height: 30px;
+      font: bold 16px/16px $font-Helvetica;
+      color: #333;
+      border-style: hidden;
+    }
+
+    #navbar-red-polygon {
+      width: 80px;
+      height: 15px;
+      background-color: #ff0500;
+      background-size: cover;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+@mixin adaptWidth {
+  width: min-content;
+  white-space: nowrap;
+}
+
+@mixin columnLeft {
+  #left-col {
+    #featured-stories {
+      .featured-title {
+        font: bold 24px/24px $font-Roboto;
+      }
+
+      .featured-text {
+        font: 15px/20px $font-Helvetica;
+      }
+    }
+
+    #sponsored-insights-left {
+      .insight-title {
+        font: bold 24px/24px $font-Roboto;
+      }
+
+      .insight-summary {
+        font: normal 15px/20px $font-Helvetica;
+      }
+    }
+  }
+}
+
+@mixin hideScrollBar {
+  // Hide scrollbar & Keep functionality
+  max-height: 3150px !important;
+  overflow-y: scroll;
+  scrollbar-width: none; /* FirefoxS */
+  -ms-overflow-style: none;  /* IE 10+ */
+  &::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+}
+
+@mixin columnMiddle {
+  #middle-col-bigger {
+    @include hideScrollBar;
+
+    #top-story {
+      .top-title {
+        font: bold 22px/24px $font-Roboto;
+      }
+
+      .top-text {
+        font: 15px/20px $font-Helvetica;
+      }
+    }
+
+    #heroes-of-the-pandemic,
+    #culture-and-travel {
+      .label-img {
+        background-color: #c2d4d7;
+        width: 100px;
+        height: 20px;
+        position: relative;
+        top: -20px;
+        font: 300 13px/20px $font-Helvetica;
+      }
+
+      .article-content {
+        position: relative;
+        top: -20px;
+
+        .article-title {
+          font: 18px/20px $font-Lora;
+        }
+
+        .article-text {
+          font: 15px/20px $font-Helvetica;
+        }
+      }
+    }
+
+    #more-stories {
+      .more-story {
+        .story-body {
+          bottom: 0;
+
+          .story-title {
+            font: 17px/20px $font-Roboto;
+          }
+
+          .story-text {
+            font: bold 15px/20px $font-Helvetica;
+          }
+
+          .story-img {
+            width: 95px;
+            height: 95px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin columnRight {
+  #right-col {
+    #opinion {
+      #opinion-cards {
+        height: 90%;
+
+        .opinion-card {
+          .opinion-img {
+            width: 63px;
+            height: 63px;
+          }
+
+          .opinion-body {
+            width: 80%;
+
+            .opinion-title {
+              font: bold 16px/20px $font-Roboto;
+
+              .opinion-link {
+                color: black;
+
+                &:hover {
+                  color: #f72210;
+                  text-decoration: none;
+                }
+              }
+            }
+
+            .opinion-author {
+              font: bold 14px/16px $font-Roboto;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+
+    #the-debate {
+      .debate-container {
+        height: 90%;
+
+        #vs-icon {
+          font: normal 17px/20px $font-Roboto;
+          height: 40px;
+          width: 40px;
+          text-align: center;
+          padding: 10px 0;
+        }
+
+        .vs-article {
+          height: 45%;
+          border-width: 4px !important;
+
+          .debate-info {
+            font: bold 17px/21px $font-Roboto;
+            width: 75%;
+          }
+
+          .debate-author {
+            height: 50%;
+            width: 100%;
+
+            .author-lines {
+              width: 100%;
+              height: 5px;
+              top: 15px;
+              position: relative;
+              z-index: 2;
+              border-color: #d9d9d9;
+            }
+
+            .author-name {
+              font: bold 14px/21px $font-Roboto;
+              width: 90%;
+            }
+
+            .debate-author-img {
+              width: 63px;
+              height: 63px;
+              z-index: 3;
+            }
+          }
+        }
+      }
+    }
+
+    #latest-news {
+      .latest-news-img {
+        width: 95px;
+        height: 95px;
+      }
+
+      .latest-title {
+        font: bold 15px/20px $font-Roboto;
+        width: 75%;
+      }
+    }
+
+    #sponsored-insights-right {
+      #n-magazine {
+        width: 29px;
+        height: 29px;
+      }
+
+      #ad-title {
+        font: bold 19px/19px $font-Roboto;
+        text-transform: uppercase;
+      }
+
+      #sign-up-button-ad {
+        font: bold 19px/19px $font-Roboto;
+        width: 100px;
+        height: 38px;
+      }
+
+      #update-link {
+        font: bold 15px/15px $font-Roboto;
+      }
+
+      .insight-title {
+        font: bold 24px/24px $font-Roboto;
+      }
+
+      .insight-summary {
+        font: normal 15px/20px $font-Helvetica;
+      }
+    }
+  }
+}

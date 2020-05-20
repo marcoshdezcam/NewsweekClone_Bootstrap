@@ -1,0 +1,115 @@
+@include media-breakpoint-down(sm) {
+  #nav--top {
+    #top-sign-in {
+      width: 50px;
+    }
+
+    #top-subscribe {
+      width: 80px;
+    }
+
+    #menu-icon {
+      width: 26px;
+      height: 30px;
+    }
+  }
+
+  #main-section {
+    #middle-col-bigger {
+      max-height: none;
+    }
+  }
+
+  #editors-pick {
+    .card {
+      width: 100%;
+    }
+  }
+
+  #footer-ads {
+    #subscribe-ad {
+      flex-direction: column;
+
+      #covers {
+        width: 100%;
+      }
+
+      #subscribe-ad-content {
+        width: 100%;
+        position: relative;
+        bottom: 170px;
+        z-index: 3;
+        text-align: center;
+
+        .ad-title {
+          font: bold 20px/28px $font-Roboto;
+        }
+      }
+    }
+
+    #newsletter-ad {
+      #subscribe-img {
+        display: none;
+      }
+
+      #ad-content {
+        width: 100% !important;
+        text-align: center;
+      }
+    }
+  }
+
+  #social-links {
+    #footer-logo {
+      width: 236px;
+      height: 36px;
+    }
+  }
+}
+
+@include media-breakpoint-only(md) {
+  #sponsored-insights-right {
+    margin: 0 25%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  nav {
+    .nav-button {
+      font: 18px/18px 'Roboto-Heading', Fallback, sans-serif;
+
+      #top-subscribe {
+        width: 126px;
+      }
+    }
+  }
+
+  #footer-ads {
+    #subscribe-ad {
+      #covers {
+        width: 50%;
+      }
+
+      #subscribe-ad-content {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #nav--top {
+    #newsweek_Logo {
+      width: 395px;
+      height: 60px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .more-story {
+    .border-bottom {
+      border-bottom: none !important;
+    }
+  }
+}

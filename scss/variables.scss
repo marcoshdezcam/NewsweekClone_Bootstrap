@@ -1,0 +1,32 @@
+// BOOTSTRAP  OVERRIDES
+$theme-colors: (
+  "primary": #ff0500,
+  "secondary": white,
+  // CUSTOM COLORS
+  "gray-bg": $gray-300,
+  "gray-main": $gray-500,
+  "gray-body": $gray-600,
+  "gray-author": $gray-700,
+  "pink-news": #f92859,
+  "blue-news": #1c87fb,
+  "whitest": #fff,
+  "blackest": #000,
+  "almost-white": #f4f5f6,
+  "label": #ffffffe6
+);
+
+$container-max-widths: (
+  sm: 575px,
+  md: 767px,
+  lg: 990px,
+  xl: 1310px,
+);
+
+$grid-columns:      14;
+$grid-gutter-width: 20px;
+
+// CUSTOMS
+$font-Roboto: 'Roboto-Heading', Fallback, sans-serif;
+$font-Helvetica: 'Helvetica-Neue', Fallback, sans-serif;
+$font-Lora: 'Lora', Fallback, sans-serif;
+$max-width-global: 1310px;
